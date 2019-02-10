@@ -14,6 +14,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf',
             \'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" syntax highlighting
+Plug 'arakashic/chromatica.nvim'
+
 " autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 

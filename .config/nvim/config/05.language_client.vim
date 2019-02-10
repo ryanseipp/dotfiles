@@ -2,6 +2,7 @@
 let g:LanguageClient_serverCommands = {
             \ 'cpp': ['cquery'],
             \ 'c': ['cquery'],
+            \ 'javascript': ['javascript-typescript-langserver'],
             \ }
 
 let g:LanguageClient_autoStart = 1
@@ -9,6 +10,7 @@ let g:LanguageClient_autoStart = 1
 let g:LanguageClient_rootMarkers = {
             \ 'cpp': ['compile_commands.json', 'build'],
             \ 'c': ['compile_commands.json', 'build'],
+            \ 'javascript': ['package.json'],
             \ }
 
 set completefunc=LanguageClient#complete

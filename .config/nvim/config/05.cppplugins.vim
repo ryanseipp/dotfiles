@@ -19,3 +19,7 @@ let cpp_options = '-std=c++17 -Wall -Wextra -Wshadow -Wnon-virtual-dtor
 let g:ale_cpp_clang_options = cpp_options
 let g:ale_cpp_gcc_options = cpp_options
 
+" ===================== Chromatica ====================
+let g:chromatica#enable_at_startup=1
+let g:chromatica#responsive_mode=1
+

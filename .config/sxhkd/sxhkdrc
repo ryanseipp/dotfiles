@@ -19,7 +19,7 @@ super + f
 	firefox
 
 super + shift + f
-  firefox --private
+    firefox --private
 
 super + v
   code
