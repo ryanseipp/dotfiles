@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/home/ryan/pic/alena-aenami-004-1k1.jpg' 
+feh --bg-fill '/home/zorbik/pic/alena-aenami-004.jpg' 
