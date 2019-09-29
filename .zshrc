@@ -26,15 +26,9 @@ if [ -r $HOME/.zshenv ]; then
   source $HOME/.zshenv
 fi
 
+plugins=(git git-prompt zsh-autosuggestions)
+
 source $ZSH/oh-my-zsh.sh
-
-DISABLE_AUTO_UPDATE="true"
-
-plugins=(
-  git
-  git-prompt
-  zsh-autosuggestions
-)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

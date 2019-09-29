@@ -21,6 +21,15 @@ super + f
 super + shift + f
     firefox --private
 
+super + d
+    firejail discord
+
+super + r
+    rider
+
+super + c
+    clion
+
 super + v
   code
 

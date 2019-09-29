@@ -43,10 +43,13 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 compton &
 
 # redshift
-redshift -l 40.4405556:-79.9961111 &
+redshift &
 
 # disable display power management
 xset -dpms &
 xset s off &
+
+# start terminal daemon
+urxvtd -q -o -f &
 
 exec bspwm

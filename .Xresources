@@ -47,7 +47,7 @@ URxvt*font:		xft:Source Code Pro Medium:pixelsize=13:antialias=true:hinting=true
 #ifdef background_opacity
 *background:	[background_opacity]base00
 #else
-*background:	base00
+*background:	[95]base00
 #endif
 *cursorColor:	base05
 

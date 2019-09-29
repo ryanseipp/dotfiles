@@ -2,7 +2,10 @@
 let g:LanguageClient_serverCommands = {
             \ 'cpp': ['cquery'],
             \ 'c': ['cquery'],
-            \ 'javascript': ['javascript-typescript-langserver'],
+            \ 'javascript': ['tcp://127.0.0.1:2089'],
+            \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+            \ 'typescript': ['tcp://127.0.0.1:2089'],
+            \ 'typescript.tsx': ['/usr/local/bin/javascript-typescript-stdio'],
             \ }
 
 let g:LanguageClient_autoStart = 1

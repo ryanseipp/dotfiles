@@ -7,6 +7,9 @@ set t_Co=256
 set background=dark
 colorscheme base16-eighties
 
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+
 " =================== Number Column ===================
 set number
 

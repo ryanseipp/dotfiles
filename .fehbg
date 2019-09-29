@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-fill '/home/zorbik/pic/alena-aenami-004.jpg' 
+feh --no-fehbg --bg-fill '/home/zorbik/pic/tiltshift.jpg' 
