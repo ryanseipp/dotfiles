@@ -39,14 +39,14 @@ export PATH="$PATH:/home/zorbik/.dotnet/tools"
 export GOPATH=$HOME/.local/share/go
 
 # Jetbrains Editors
-export IDEA_PROPERTIES=$HOME/.config/Jetbrains/Idea/config/idea.properties
-export CLION_PROPERTIES=$HOME/.config/Jetbrains/CLion/config/idea.properties
-export APPCODE_PROPERTIES=$HOME/.config/Jetbrains/AppCode/config/idea.properties
-export PYCHARM_PROPERTIES=$HOME/.config/Jetbrains/PyCharm/config/idea.properties
-export DATAGRIP_PROPERTIES=$HOME/.config/Jetbrains/DataGrip/config/idea.properties
-export STUDIO_PROPERTIES=$HOME/.config/Jetbrains/AndroidStudio/config/idea.properties
-export WEBIDE_PROPERTIES=$HOME/.config/Jetbrains/WebStorm/config/idea.properties
-export PHPSTORM_PROPERTIES=$HOME/.config/Jetbrains/PHPStorm/config/idea.properties
-export GOLAND_PROPERTIES=$HOME/.config/Jetbrains/GoLand/config/idea.properties
-export RIDER_PROPERTIES=$HOME/.config/Jetbrains/Rider/config/idea.properties
+export IDEA_PROPERTIES=$HOME/.config/Jetbrains/Idea/idea.properties
+export CLION_PROPERTIES=$HOME/.config/Jetbrains/CLion/idea.properties
+export APPCODE_PROPERTIES=$HOME/.config/Jetbrains/AppCode/idea.properties
+export PYCHARM_PROPERTIES=$HOME/.config/Jetbrains/PyCharm/idea.properties
+export DATAGRIP_PROPERTIES=$HOME/.config/Jetbrains/DataGrip/idea.properties
+export STUDIO_PROPERTIES=$HOME/.config/Jetbrains/AndroidStudio/idea.properties
+export WEBIDE_PROPERTIES=$HOME/.config/Jetbrains/WebStorm/idea.properties
+export PHPSTORM_PROPERTIES=$HOME/.config/Jetbrains/PHPStorm/idea.properties
+export GOLAND_PROPERTIES=$HOME/.config/Jetbrains/GoLand/idea.properties
+export RIDER_PROPERTIES=$HOME/.config/Jetbrains/Rider/idea.properties
 
