@@ -1,0 +1,26 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="arrowsStyle" value="Darcula" />
+    <option name="accentScrollbars" value="false" />
+    <option name="fileStatusColorsEnabled" value="false" />
+    <option name="isContrastMode" value="true" />
+    <option name="isDecoratedFolders" value="false" />
+    <option name="isMaterialDesign" value="false" />
+    <option name="isMaterialTheme" value="false" />
+    <option name="isWizardShown" value="true" />
+    <option name="overrideAccentColor" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="statusBarTheme" value="false" />
+    <option name="themedScrollbars" value="false" />
+    <option name="upperCaseButtons" value="false" />
+    <option name="useMaterialIcons" value="false" />
+    <option name="useColoredDirectories" value="false" />
+    <option name="useHollowFolders" value="false" />
+    <option name="highlightThickness" value="1" />
+    <option name="tabsHeight" value="50" />
+    <option name="accentColor" value="009688" />
+    <option name="selectedTheme" value="DARKER" />
+    <option name="userId" value="-7a217d44:16bf17fa6b9:-8000" />
+    <option name="version" value="4.4.6" />
+  </component>
+</application>

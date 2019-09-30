@@ -1,0 +1,668 @@
+<project version="4">
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/DataContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#71#0" expanded="true" />
+                <marker date="1560561533181" expanded="true" signature="155:390" ph="{...}" />
+                <marker date="1560561533181" expanded="true" signature="337:386" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/User.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="31" />
+              <folding>
+                <marker date="1560557963891" expanded="true" signature="69:132" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Email.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+                <marker date="1560556023464" expanded="true" signature="135:880" ph="{...}" />
+                <marker date="1560556023464" expanded="true" signature="202:302" ph="{...}" />
+                <marker date="1560556023464" expanded="true" signature="355:687" ph="{...}" />
+                <marker date="1560556023464" expanded="true" signature="741:788" ph="{...}" />
+                <marker date="1560556023464" expanded="true" signature="835:876" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Page.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <marker date="1560557963897" expanded="true" signature="53:151" ph="{...}" />
+                <marker date="1560557963897" expanded="true" signature="84:149" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/BlogPost.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <marker date="1560559248784" expanded="true" signature="53:234" ph="{...}" />
+                <marker date="1560559248784" expanded="true" signature="88:232" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="24" />
+    <option name="y" value="40" />
+    <option name="width" value="1864" />
+    <option name="height" value="1008" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="FileSystemExplorer" proportions="" version="1">
+      <autoscrollToSource SolutionExplorer="true" />
+      <autoscrollFromSource SolutionExplorer="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="ryanseipp.com.Domain" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="ryanseipp.com.Domain" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Models" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ryanseipp.com" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+        <option name="autoscroll-all" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82058000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="24" y="40" width="1864" height="1008" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17051706" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.32893288" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.34323433" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="NuGet" order="10" weight="0.34543455" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.3293348" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3091309" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" weight="0.3293348" />
+      <window_info anchor="bottom" id="Errors In Solution" order="15" weight="0.32893288" />
+      <window_info anchor="bottom" id="Performance Profiler" order="16" />
+      <window_info anchor="bottom" id="REST Client" order="17" />
+      <window_info anchor="bottom" id="Change Signature" order="18" side_tool="true" />
+      <window_info anchor="bottom" id="Services" order="19" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.24972558" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17766777" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.32893288" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.34323433" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="NuGet" order="10" weight="0.6028603" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.3293348" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3091309" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" weight="0.3293348" />
+      <window_info anchor="bottom" id="Errors In Solution" order="15" weight="0.32893288" />
+      <window_info anchor="bottom" id="Performance Profiler" order="16" />
+      <window_info anchor="bottom" id="REST Client" order="17" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.24972558" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/IoC/ValidationModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <marker date="1557463768339" expanded="true" signature="6:38" ph="..." />
+            <marker date="1557463768339" expanded="true" signature="77:331" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="120:329" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="180:325" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1557463768339" expanded="false" signature="6:171" ph="..." />
+            <marker date="1557463768339" expanded="true" signature="201:1270" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="226:1268" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="270:621" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="327:451" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="479:562" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="577:615" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/Configuration/ServiceHostConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <marker date="1557463768339" expanded="false" signature="6:120" ph="..." />
+            <marker date="1557463768339" expanded="true" signature="169:505" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="218:503" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="294:499" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Controllers/SinglePageApplicationController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1558733252595" expanded="false" signature="6:156" ph="..." />
+            <marker date="1558733252595" expanded="true" signature="198:661" ph="{...}" />
+            <marker date="1558733252595" expanded="true" signature="301:659" ph="{...}" />
+            <marker date="1558733252595" expanded="true" signature="482:655" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/SearchModel.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Utility/Search/SearchModel.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Utility/Search/SearchProcessor.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.sln">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/DataStoreExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <marker date="1558741836945" expanded="true" signature="6:32" ph="..." />
+            <marker date="1558741836945" expanded="true" signature="75:325" ph="{...}" />
+            <marker date="1558741836945" expanded="true" signature="119:323" ph="{...}" />
+            <marker date="1558741836945" expanded="true" signature="197:319" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/EmailAddress.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/Configuration/CorsConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <marker date="1558751344878" expanded="true" signature="6:83" ph="..." />
+            <marker date="1558751344878" expanded="true" signature="132:438" ph="{...}" />
+            <marker date="1558751344878" expanded="true" signature="174:436" ph="{...}" />
+            <marker date="1558751344878" expanded="true" signature="227:432" ph="{...}" />
+            <marker date="1558751344878" expanded="true" signature="275:424" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/Configuration/RouteConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <marker date="1557463768339" expanded="true" signature="6:71" ph="..." />
+            <marker date="1557463768339" expanded="true" signature="120:475" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="163:473" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="221:469" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/IDataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <marker date="1558741705185" expanded="true" signature="6:124" ph="..." />
+            <marker date="1558741705185" expanded="true" signature="167:626" ph="{...}" />
+            <marker date="1558741705185" expanded="true" signature="224:624" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Utility/ryanseipp.com.Utility.csproj" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/Configuration/JsonOptionsConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <marker date="1557463768339" expanded="false" signature="6:125" ph="..." />
+            <marker date="1557463768339" expanded="true" signature="174:824" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="223:822" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="282:818" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/DataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <marker date="1560293103115" expanded="true" signature="6:199" ph="..." />
+            <marker date="1560293103115" expanded="true" signature="242:3623" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="349:3621" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="531:612" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="700:765" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="861:1185" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="1297:1373" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="1493:1947" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="2039:2108" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="2208:2394" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="2489:2561" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="2664:2827" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="2915:2976" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="3072:3422" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="3468:3529" ph="{...}" />
+            <marker date="1560293103115" expanded="true" signature="3571:3617" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/Configuration/EntityFrameworkConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1557477561732" expanded="true" signature="6:78" ph="..." />
+            <marker date="1557477561732" expanded="true" signature="127:470" ph="{...}" />
+            <marker date="1557477561732" expanded="true" signature="180:468" ph="{...}" />
+            <marker date="1557477561732" expanded="true" signature="278:464" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Core/Configuration/AppConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <marker date="1557463768339" expanded="false" signature="6:102" ph="..." />
+            <marker date="1557463768339" expanded="true" signature="151:812" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="192:810" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="334:806" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="560:646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Models/User.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Models/UserType.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Models/UserTypeEnum.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/BaseEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <marker date="1560293103109" expanded="true" signature="56:212" ph="{...}" />
+            <marker date="1560293103109" expanded="true" signature="84:210" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Models/BlogPost.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/BlogPosts/GetBlogPostRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding>
+            <marker date="1557463768339" expanded="true" signature="41:89" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="77:87" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/PageId.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/BlogPostAnalytics.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/PageStat.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/ryanseipp.com.API.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/ryanseipp.com.Persistence.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Controllers/BlogPostController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <marker date="1558734774481" expanded="true" signature="6:76" ph="..." />
+            <marker date="1558734774481" expanded="true" signature="118:439" ph="{...}" />
+            <marker date="1558734774481" expanded="true" signature="218:437" ph="{...}" />
+            <marker date="1558734774481" expanded="true" signature="313:348" ph="{...}" />
+            <marker date="1558734774481" expanded="true" signature="407:433" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Configuration/BlogPostEntityConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding>
+            <marker date="1560553612041" expanded="true" signature="50:107" ph="{...}" />
+            <marker date="1560553612041" expanded="true" signature="95:105" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/ryanseipp.com.Domain.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/UserType.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/PageStatistics.cs" />
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/ValueObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <marker date="1560554577281" expanded="true" signature="38:817" ph="{...}" />
+            <marker date="1560554577281" expanded="true" signature="104:815" ph="{...}" />
+            <marker date="1560554577281" expanded="true" signature="150:253" ph="{...}" />
+            <marker date="1560554577281" expanded="true" signature="343:382" ph="{...}" />
+            <marker date="1560554577281" expanded="true" signature="502:707" ph="{...}" />
+            <marker date="1560554577281" expanded="true" signature="780:811" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Url.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <marker date="1560555342884" expanded="true" signature="38:305" ph="{...}" />
+            <marker date="1560555342884" expanded="true" signature="78:303" ph="{...}" />
+            <marker date="1560555342884" expanded="true" signature="169:211" ph="{...}" />
+            <marker date="1560555342884" expanded="true" signature="258:299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Percentage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <marker date="1560558317424" expanded="true" signature="38:906" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="92:904" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="200:280" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="230:273" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="343:417" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="373:410" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="482:556" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="512:549" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="626:706" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="656:699" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="765:812" ph="{...}" />
+            <marker date="1560558317424" expanded="true" signature="859:900" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/PageType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding>
+            <marker date="1560382632612" expanded="true" signature="38:126" ph="{...}" />
+            <marker date="1560382632612" expanded="true" signature="63:124" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/PageStatistic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <marker date="1560557963884" expanded="true" signature="53:226" ph="{...}" />
+            <marker date="1560557963884" expanded="true" signature="93:224" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Entity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <marker date="1560554052064" expanded="true" signature="38:898" ph="{...}" />
+            <marker date="1560554052064" expanded="true" signature="71:896" ph="{...}" />
+            <marker date="1560554052064" expanded="true" signature="159:433" ph="{...}" />
+            <marker date="1560554052064" expanded="true" signature="490:701" ph="{...}" />
+            <marker date="1560554052064" expanded="true" signature="758:789" ph="{...}" />
+            <marker date="1560554052064" expanded="true" signature="829:892" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/UserName.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1560556454001" expanded="true" signature="53:481" ph="{...}" />
+            <marker date="1560556454001" expanded="true" signature="103:479" ph="{...}" />
+            <marker date="1560556454001" expanded="true" signature="248:341" ph="{...}" />
+            <marker date="1560556454001" expanded="true" signature="388:475" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.API/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          <folding>
+            <marker date="1560295320726" expanded="false" signature="6:491" ph="..." />
+            <marker date="1560295320726" expanded="true" signature="521:2535" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="546:2533" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="650:695" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="760:1773" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="1139:1265" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="1445:1580" ph="/* TODO: Fill this in when first action finished ... */" />
+            <marker date="1560295320726" expanded="true" signature="1836:2107" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="2185:2529" ph="{...}" />
+            <marker date="1560295320726" expanded="true" signature="2259:2296" ph="/* else ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Mapping/DomainMappingProfile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding>
+            <marker date="1557463768339" expanded="true" signature="39:143" ph="{...}" />
+            <marker date="1557463768339" expanded="true" signature="98:141" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Persistence/Core/DataContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+            <marker date="1560561533181" expanded="true" signature="155:390" ph="{...}" />
+            <marker date="1560561533181" expanded="true" signature="337:386" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="31" />
+          <folding>
+            <marker date="1560557963891" expanded="true" signature="69:132" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Email.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1560556023464" expanded="true" signature="135:880" ph="{...}" />
+            <marker date="1560556023464" expanded="true" signature="202:302" ph="{...}" />
+            <marker date="1560556023464" expanded="true" signature="355:687" ph="{...}" />
+            <marker date="1560556023464" expanded="true" signature="741:788" ph="{...}" />
+            <marker date="1560556023464" expanded="true" signature="835:876" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/Page.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <marker date="1560557963897" expanded="true" signature="53:151" ph="{...}" />
+            <marker date="1560557963897" expanded="true" signature="84:149" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ryanseipp.com.Domain/Models/BlogPost.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <marker date="1560559248784" expanded="true" signature="53:234" ph="{...}" />
+            <marker date="1560559248784" expanded="true" signature="88:232" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

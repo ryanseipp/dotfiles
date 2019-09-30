@@ -1,0 +1,703 @@
+<project version="4">
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="636">
+              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+              <folding>
+                <marker date="1562856044677" expanded="false" signature="6:366" ph="..." />
+                <marker date="1562856044677" expanded="true" signature="401:1737" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="428:1735" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="480:970" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="557:725" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="758:875" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="895:960" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+              <folding>
+                <marker date="1562856044677" expanded="false" signature="6:594" ph="..." />
+                <marker date="1562856044677" expanded="true" signature="629:3685" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="656:3683" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="875:2465" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="1294:1448" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="2041:2112" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="2140:2275" ph="/* TODO Add authentication ... */" />
+                <marker date="1562856044677" expanded="true" signature="2531:2849" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="2930:3677" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="3039:3295" ph="{...}" />
+                <marker date="1562856044677" expanded="true" signature="3374:3504" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Core/Configuration/RouteConfiguration.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding>
+                <marker date="1562856044674" expanded="false" signature="6:71" ph="..." />
+                <marker date="1562856044674" expanded="true" signature="125:513" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="170:511" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="236:505" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Controllers/AuditLogController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding>
+                <marker date="1562856044674" expanded="false" signature="6:276" ph="..." />
+                <marker date="1562856044674" expanded="true" signature="323:1526" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="429:1524" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="606:690" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="934:1518" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="1093:1156" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Controllers/OrderController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2016">
+              <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+              <folding>
+                <marker date="1562856044674" expanded="true" signature="456:6555" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="463:589" ph="/// Cornerstone API intended for use when placing, modifying, or interacting with Orders. ... " />
+                <marker date="1562856044674" expanded="true" signature="690:6553" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="913:997" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="1015:1282" ph="/// Submit order to be placed on the provided exchange. ... " />
+                <marker date="1562856044674" expanded="true" signature="1409:1776" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="1590:1673" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="1910:2258" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="1936:2131" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="2175:2248" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="2400:2762" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="2426:2643" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="2687:2752" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="2780:3031" ph="/// Update the status of an existing order. ... " />
+                <marker date="1562856044674" expanded="true" signature="3163:3376" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="3394:3667" ph="/// Update the current shares of an existing order. ... " />
+                <marker date="1562856044674" expanded="true" signature="3813:4025" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="4043:4241" ph="/// Get a single order by id ... " />
+                <marker date="1562856044674" expanded="true" signature="4325:4571" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="4456:4521" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="4589:4820" ph="/// Search all available orders ... " />
+                <marker date="1562856044674" expanded="true" signature="4940:5229" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="5025:5072" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="5239:5421" ph="/// Add a new order import template ... " />
+                <marker date="1562856044674" expanded="true" signature="5565:5788" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="5798:5911" ph="/// Get latest order import template ... " />
+                <marker date="1562856044674" expanded="true" signature="6094:6547" ph="{...}" />
+                <marker date="1562856044674" expanded="true" signature="6254:6317" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/60853FA4-E2B4-447D-AD41-D96DBD1379FF/1/ServiceCollectionExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="24" />
+    <option name="y" value="40" />
+    <option name="width" value="1864" />
+    <option name="height" value="1008" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Cornerstone.Trading" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Cornerstone.Trading" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Cornerstone.Trading.API" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Cornerstone.Trading" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Cornerstone.Trading.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Cornerstone.Trading" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Cornerstone.Trading.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Cornerstone.Trading" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Cornerstone.Trading.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Configuration" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+        <option name="autoscroll-all" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57445000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="24" y="40" width="1864" height="1008" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24145535" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32821077" />
+      <window_info anchor="bottom" id="REST Client" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" weight="0.32821077" />
+      <window_info anchor="bottom" id="Errors In Solution" order="16" weight="0.16611661" />
+      <window_info anchor="bottom" id="Build" order="17" weight="0.32893288" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.32893288" />
+      <window_info anchor="bottom" id="Database" order="19" weight="0.32893288" />
+      <window_info anchor="bottom" id="Services" order="20" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="3" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Persistence/Cornerstone.Trading.Persistence.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Cornerstone.Trading.Domain.Tests/AuditLogServiceTests.cs" />
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Persistence/Models/AuditLog.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1562856044684" expanded="false" signature="6:57" ph="..." />
+            <marker date="1562856044684" expanded="true" signature="107:557" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="148:555" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Cornerstone.Trading.Persistence.Tests/OrderStoreTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1562856044700" expanded="false" signature="6:65" ph="..." />
+            <marker date="1562856044700" expanded="true" signature="114:202" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="179:200" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E12AA92-1E57-4067-A322-8F82407CE9DD/6b/63b60f22/FieldInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E12AA92-1E57-4067-A322-8F82407CE9DD/0a/041cbcf0/MethodBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/906C1187-7F7C-4920-B66F-513638DD8FFF/05/4b56481e/Expression.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="3233" column="6" selection-start-line="3233" selection-start-column="6" selection-end-line="3233" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Orders/UpdateOrderStatusRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding>
+            <marker date="1562861807567" expanded="false" signature="6:99" ph="..." />
+            <marker date="1562861807567" expanded="true" signature="144:508" ph="{...}" />
+            <marker date="1562861807567" expanded="true" signature="204:506" ph="{...}" />
+            <marker date="1562861807567" expanded="true" signature="320:434" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Orders/Aggregate/Status.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562856044680" expanded="true" signature="53:223" ph="{...}" />
+            <marker date="1562856044680" expanded="true" signature="78:221" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Orders/UpdateOrderSharesRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding>
+            <marker date="1562862304844" expanded="false" signature="6:99" ph="..." />
+            <marker date="1562862304844" expanded="true" signature="144:521" ph="{...}" />
+            <marker date="1562862304844" expanded="true" signature="204:519" ph="{...}" />
+            <marker date="1562862304844" expanded="true" signature="324:447" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43dc73b7-9d80-4442-bd24-bd738e82806e/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Core/Auditing/AuditLogJsonLogModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+          <folding>
+            <marker date="1562864770790" expanded="true" signature="50:160" ph="{...}" />
+            <marker date="1562864770790" expanded="true" signature="100:158" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/70faa8d3-0279-4617-a847-58502a7bd334/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Persistence/Core/IDataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <marker date="1562856044684" expanded="false" signature="6:124" ph="..." />
+            <marker date="1562856044684" expanded="true" signature="172:650" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="231:648" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Core/Auditing/Loggers/UpdateOrderStatusRequestAuditLogger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <marker date="1562888648084" expanded="true" signature="6:386" ph="..." />
+            <marker date="1562888648084" expanded="true" signature="446:2231" ph="{...}" />
+            <marker date="1562888648084" expanded="true" signature="547:2229" ph="{...}" />
+            <marker date="1562888648084" expanded="true" signature="856:947" ph="{...}" />
+            <marker date="1562888648084" expanded="true" signature="1055:1954" ph="{...}" />
+            <marker date="1562888648084" expanded="true" signature="1203:1944" ph="/* var auditLogs = await _auditLogDataStore.GetCollection() ... */" />
+            <marker date="1562888648084" expanded="true" signature="2048:2223" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Core/Auditing/AuditLogService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="72" column="69" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="69" />
+          <folding>
+            <marker date="1562856452567" expanded="true" signature="6:353" ph="..." />
+            <marker date="1562856452567" expanded="true" signature="405:3141" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="501:3139" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="1099:1303" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="1379:2736" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="1428:1723" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="1966:2586" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="2054:2159" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="2222:2508" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="2603:2726" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="2807:3133" ph="{...}" />
+            <marker date="1562856452567" expanded="true" signature="2938:3094" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Orders/GenerateAuditLogRequestHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="47" />
+          <folding>
+            <marker date="1562856044680" expanded="false" signature="6:308" ph="..." />
+            <marker date="1562856044680" expanded="true" signature="353:1807" ph="{...}" />
+            <marker date="1562856044680" expanded="true" signature="468:1805" ph="{...}" />
+            <marker date="1562856044680" expanded="true" signature="775:896" ph="{...}" />
+            <marker date="1562856044680" expanded="true" signature="1023:1799" ph="{...}" />
+            <marker date="1562856044680" expanded="true" signature="1089:1209" ph="{...}" />
+            <marker date="1562856044680" expanded="true" signature="1258:1520" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Persistence/Core/DataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
+          <folding>
+            <marker date="1562856044684" expanded="false" signature="6:199" ph="..." />
+            <marker date="1562856044684" expanded="true" signature="358:5672" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="601:715" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="769:834" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="896:1361" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="1471:1561" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="1676:2244" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="1774:1864" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="2346:2426" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="2525:2995" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="3053:3124" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="3189:3411" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="3496:3695" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="3777:3863" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="3952:4263" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="4057:4170" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="4324:4398" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="4466:4830" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="4884:4947" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="5008:5398" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="5447:5525" ph="{...}" />
+            <marker date="1562856044684" expanded="true" signature="5562:5666" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Cornerstone.Trading.Domain.Tests/UpdateOrderStatusRequestAuditLoggerTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="49" selection-end-column="49" />
+          <folding>
+            <marker date="1562862346550" expanded="true" signature="6:401" ph="..." />
+            <marker date="1562862346550" expanded="true" signature="445:3431" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="505:3429" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="604:1432" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="1542:2374" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="1794:2316" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="1849:2298" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="2458:2896" ph="{...}" />
+            <marker date="1562862346550" expanded="true" signature="2984:3423" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Cornerstone.Trading.Domain.Tests/UpdateOrderSharesRequestAuditLoggerTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+          <folding>
+            <marker date="1562864610994" expanded="true" signature="6:334" ph="..." />
+            <marker date="1562864610994" expanded="true" signature="378:5199" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="438:5197" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="537:1365" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="1475:2816" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="1742:2758" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="1797:2240" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="2295:2740" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="2900:3323" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="3411:3837" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="3927:5191" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="4000:4613" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="4047:4599" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="4875:5031" ph="{...}" />
+            <marker date="1562864610994" expanded="true" signature="5064:5180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Cornerstone.Trading.Domain.Tests/TestAsyncProviders.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <marker date="1562859783397" expanded="true" signature="6:189" ph="..." />
+            <marker date="1562859783397" expanded="true" signature="233:2595" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="308:1425" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="425:473" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="535:620" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="702:788" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="842:909" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="973:1049" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1136:1221" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1333:1419" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1525:2044" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1624:1644" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1734:1754" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1806:1910" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="1954:2038" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="2109:2593" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="2221:2269" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="2300:2350" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="2376:2439" ph="{...}" />
+            <marker date="1562859783397" expanded="true" signature="2512:2587" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Cornerstone.Trading.Domain.Tests/OrderTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <marker date="1562856044700" expanded="false" signature="6:685" ph="..." />
+            <marker date="1562856044700" expanded="true" signature="729:5551" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="789:5549" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="834:1084" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="920:990" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="1193:2331" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="1436:1530" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="1681:1763" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="1960:2274" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="2014:2108" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="2162:2256" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="2407:4219" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="2827:3377" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="4288:4829" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="4902:5543" ph="{...}" />
+            <marker date="1562856044700" expanded="true" signature="5239:5296" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Persistence/Stores/AuditLogDataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+          <folding>
+            <marker date="1562892234797" expanded="false" signature="6:318" ph="..." />
+            <marker date="1562892234797" expanded="true" signature="444:2093" ph="{...}" />
+            <marker date="1562892234797" expanded="true" signature="594:614" ph="{...}" />
+            <marker date="1562892234797" expanded="true" signature="810:1281" ph="{...}" />
+            <marker date="1562892234797" expanded="true" signature="1385:2087" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Core/Auditing/Loggers/UpdateOrderSharesRequestAuditLogger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="36" column="101" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
+          <folding>
+            <marker date="1562888648077" expanded="false" signature="6:417" ph="..." />
+            <marker date="1562888648077" expanded="true" signature="477:2213" ph="{...}" />
+            <marker date="1562888648077" expanded="true" signature="578:2211" ph="{...}" />
+            <marker date="1562888648077" expanded="true" signature="887:978" ph="{...}" />
+            <marker date="1562888648077" expanded="true" signature="1086:1945" ph="{...}" />
+            <marker date="1562888648077" expanded="true" signature="1097:1241" ph="/* return await _auditLogDataStore.GetDuplicateLogs(internalOrderId, &quot;CurrentShares&quot;, ... */" />
+            <marker date="1562888648077" expanded="true" signature="2039:2205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.Domain/Cornerstone.Trading.Domain.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/127E718A-C42E-4542-A71B-54CEC3EF156B/fc/56d78b32/WebHostBuilderExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="65" column="55" lean-forward="true" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/127E718A-C42E-4542-A71B-54CEC3EF156B/18/1e86c897/WebHostBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1583">
+          <caret line="235" column="76" lean-forward="true" selection-start-line="235" selection-start-column="76" selection-end-line="235" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/89E901F5-02EC-4DB4-BBC5-F7BFEA24CDDA/61/29cef35e/IWebHostBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/appsettings.Production.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Controllers/OrderController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+          <folding>
+            <marker date="1562856044674" expanded="true" signature="456:6555" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="463:589" ph="/// Cornerstone API intended for use when placing, modifying, or interacting with Orders. ... " />
+            <marker date="1562856044674" expanded="true" signature="690:6553" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="913:997" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="1015:1282" ph="/// Submit order to be placed on the provided exchange. ... " />
+            <marker date="1562856044674" expanded="true" signature="1409:1776" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="1590:1673" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="1910:2258" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="1936:2131" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="2175:2248" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="2400:2762" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="2426:2643" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="2687:2752" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="2780:3031" ph="/// Update the status of an existing order. ... " />
+            <marker date="1562856044674" expanded="true" signature="3163:3376" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="3394:3667" ph="/// Update the current shares of an existing order. ... " />
+            <marker date="1562856044674" expanded="true" signature="3813:4025" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="4043:4241" ph="/// Get a single order by id ... " />
+            <marker date="1562856044674" expanded="true" signature="4325:4571" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="4456:4521" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="4589:4820" ph="/// Search all available orders ... " />
+            <marker date="1562856044674" expanded="true" signature="4940:5229" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="5025:5072" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="5239:5421" ph="/// Add a new order import template ... " />
+            <marker date="1562856044674" expanded="true" signature="5565:5788" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="5798:5911" ph="/// Get latest order import template ... " />
+            <marker date="1562856044674" expanded="true" signature="6094:6547" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="6254:6317" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/60853FA4-E2B4-447D-AD41-D96DBD1379FF/1/ServiceCollectionExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Core/Configuration/AppConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <marker date="1562856044674" expanded="false" signature="6:102" ph="..." />
+            <marker date="1562856044674" expanded="true" signature="156:924" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="199:922" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="343:916" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="629:742" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding>
+            <marker date="1562856044677" expanded="false" signature="6:366" ph="..." />
+            <marker date="1562856044677" expanded="true" signature="401:1737" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="428:1735" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="480:970" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="557:725" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="758:875" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="895:960" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+          <folding>
+            <marker date="1562856044677" expanded="false" signature="6:594" ph="..." />
+            <marker date="1562856044677" expanded="true" signature="629:3685" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="656:3683" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="875:2465" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="1294:1448" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="2041:2112" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="2140:2275" ph="/* TODO Add authentication ... */" />
+            <marker date="1562856044677" expanded="true" signature="2531:2849" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="2930:3677" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="3039:3295" ph="{...}" />
+            <marker date="1562856044677" expanded="true" signature="3374:3504" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Core/Configuration/RouteConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <marker date="1562856044674" expanded="false" signature="6:71" ph="..." />
+            <marker date="1562856044674" expanded="true" signature="125:513" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="170:511" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="236:505" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cornerstone.Trading.API/Controllers/AuditLogController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <marker date="1562856044674" expanded="false" signature="6:276" ph="..." />
+            <marker date="1562856044674" expanded="true" signature="323:1526" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="429:1524" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="606:690" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="934:1518" ph="{...}" />
+            <marker date="1562856044674" expanded="true" signature="1093:1156" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

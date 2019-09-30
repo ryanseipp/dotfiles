@@ -1,0 +1,112 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/src/ryanseipp.com/src/ryanseipp.com.Web" />
+        <option value="$USER_HOME$/dwn/typescript-template-v1" />
+        <option value="$USER_HOME$/src/deal.com/src/deal.com.web" />
+        <option value="$USER_HOME$/src/work/ptg-web/src/PTGenie.UI" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/src/ryanseipp.com/src/ryanseipp.com.Web" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/src/ryanseipp.com/src/ryanseipp.com.Web" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/dwn/typescript-template-v1">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.6262.59" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1568292123019" />
+              <option name="buildTimestamp" value="1566315814174" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/deal.com/src/deal.com.web">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.6262.59" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1567574964647" />
+              <option name="buildTimestamp" value="1566315803011" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/dealz.com/src/dealz.com.web">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.6262.59" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1567543277140" />
+              <option name="buildTimestamp" value="1566315790900" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/ryanseipp.com.ui">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.6262.59" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1567574978544" />
+              <option name="buildTimestamp" value="1566315803011" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/ryanseipp.com/src/ryanseipp.com.Web">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.6603.19" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1569803659757" />
+              <option name="buildTimestamp" value="1567511238132" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/work/ptg-web">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.5728.87" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1566961786393" />
+              <option name="buildTimestamp" value="1563790298956" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/work/ptg-web/src/PTGenie.UI">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.6262.59" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1567556204223" />
+              <option name="buildTimestamp" value="1566315790900" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/work/ptg-web/src/ptgenie.ui">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-192.5728.87" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1566957475686" />
+              <option name="buildTimestamp" value="1563790298956" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/src/deal.com/src" />
+  </component>
+</application>

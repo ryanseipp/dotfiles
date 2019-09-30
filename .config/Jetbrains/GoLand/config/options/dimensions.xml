@@ -1,0 +1,26 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="959" y="436" />
+    <location key="SettingsEditor.0.0.1920.1080" x="450" y="205" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="744" y="304" />
+    <location key="#GOPATH.0.0.1920.1080" x="556" y="220" />
+    <location key="#go_build_tendywatch.com/.0.0.1920.1080" x="711" y="206" />
+    <location key="ProcessPopupWindow.0.0.1920.1080" x="1416" y="842" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="420" y="217" />
+    <location key="#Build_Tags_&amp;_Vendoring.0.0.1920.1080" x="556" y="220" />
+    <location key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1.0.0.1920.1080" x="700" y="402" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" x="769" y="278" />
+    <location key="#go_build_AlertsController.go.0.0.1920.1080" x="711" y="206" />
+    <location key="#Notifications.0.0.1920.1080" x="551" y="205" />
+    <location key="#Plugins.0.0.1920.1080" x="560" y="113" />
+    <location key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog.0.0.1920.1080" x="639" y="272" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1818" height="273" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1818" height="273" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1818" height="273" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1818" height="273" />
+    <size key="ProcessPopupWindow.0.0.1920.1080" width="400" height="202" />
+    <size key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1.0.0.1920.1080" width="502" height="254" />
+    <size key="#Notifications.0.0.1920.1080" width="800" height="647" />
+    <size key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog.0.0.1920.1080" width="624" height="514" />
+  </component>
+</application>

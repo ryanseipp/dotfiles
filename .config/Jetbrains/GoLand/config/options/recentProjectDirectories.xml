@@ -1,0 +1,65 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/.local/share/go/src/gitlab.com/ryanseipp/tendywatch" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/.local/share/go/src/gitlab.com/ryanseipp/tendywatch" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/.local/share/go/src/gitlab.com/ryanseipp/tendywatch" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/.local/share/go/src/gitlab.com/ryanseipp/tendywatch">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-192.6603.35" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1569803705288" />
+              <option name="buildTimestamp" value="1568167441533" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/gitlab.com/ryanseipp/tendywatch.com">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-191.7479.32" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1561777517684" />
+              <option name="buildTimestamp" value="1559181735446" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/tendywatch">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-191.7479.32" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1562725336743" />
+              <option name="buildTimestamp" value="1559181729283" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/tendywatch.com">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-191.7479.32" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1561780203269" />
+              <option name="buildTimestamp" value="1559181721895" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/src" />
+  </component>
+</application>

@@ -1,0 +1,31 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="959" y="436" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="657" y="390" />
+    <location key="SettingsEditor.0.0.1920.1080" x="450" y="205" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="744" y="304" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="420" y="217" />
+    <location key="search.everywhere.popup.0.0.1920.1080" x="619" y="261" />
+    <location key="refactoring.ChangeSignatureDialog.0.0.1920.1080" x="705" y="206" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" x="749" y="278" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1920.1080" x="694" y="309" />
+    <location key="#beast_rest.0.0.1920.1080" x="740" y="283" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080" x="731" y="365" />
+    <location key="RollbackChangesDialog.0.0.1920.1080" x="794" y="267" />
+    <location key="#C/C++.0.0.1920.1080" x="556" y="220" />
+    <location key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1.0.0.1920.1080" x="713" y="420" />
+    <location key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog.0.0.1920.1080" x="644" y="290" />
+    <size key="SettingsEditor.0.0.1920.1080" width="997" height="700" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1822" height="275" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1822" height="275" />
+    <size key="search.everywhere.popup.0.0.1920.1080" width="672" height="678" />
+    <size key="refactoring.ChangeSignatureDialog.0.0.1920.1080" width="501" height="671" />
+    <size key="#beast_rest.0.0.1920.1080" width="432" height="529" />
+  </component>
+</application>

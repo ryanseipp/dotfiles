@@ -1,0 +1,67 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/src/cpp/beast-rest" />
+        <option value="$USER_HOME$/src/cpp/stock-calculator" />
+        <option value="$USER_HOME$/src/cpp/ryanseipp.com" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/src/cpp/beast-rest" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/src/cpp/beast-rest" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/src/cpp/beast-rest">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="CL-192.6603.37" />
+              <option name="productionCode" value="CL" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1569802612643" />
+              <option name="buildTimestamp" value="1568195990752" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/cpp/mus">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="CL-191.7479.33" />
+              <option name="productionCode" value="CL" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1563125962670" />
+              <option name="buildTimestamp" value="1559219240964" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/cpp/ryanseipp.com">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="CL-191.7479.33" />
+              <option name="productionCode" value="CL" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1563132823921" />
+              <option name="buildTimestamp" value="1559219240964" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/src/cpp/stock-calculator">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="CL-192.5728.100" />
+              <option name="productionCode" value="CL" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1565536142486" />
+              <option name="buildTimestamp" value="1563876777419" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/src/cpp" />
+  </component>
+</application>

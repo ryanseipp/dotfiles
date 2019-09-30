@@ -1,0 +1,39 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/bin/node">
+      <version-cache version="12.9.1" last-modified="1566902742000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/bin/node">
+      <version-cache version="12.9.1" last-modified="1566902742000" />
+    </local-interpreter>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Cantarell Regular" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ColorChooser.RecentColors" value="170-189-233-255,,,66-91-103-255" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="InstalledPluginsSearchHistory" value="snippets&#10;snippe&#10;snipp&#10;sni&#10;prettier" />
+    <property name="MarketplacePluginsSearchHistory" value="snippets&#10;icon" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="SettingsSearchHistory" value="snippets&#10;tab&#10;editor&#10;Reformat&#10;Refor" />
+    <property name="WebStorm.disableSafeWrite" value="true" />
+    <property name="WebStorm.enableDefaultTooltipFixes" value="true" />
+    <property name="WebStorm.enableSmartQuotes" value="true" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="ask.about.ctrl.y.shortcut" value="true" />
+    <property name="evlsprt3.191" value="10" />
+    <property name="evlsprt3.192" value="12" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/dwn/typescript-template-v1&#10;/home/zorbik/src/ryanseipp.com/src/ryanseipp.com.Web&#10;/home/zorbik/src/dealz.com/src&#10;/usr/lib/node_modules/prettier&#10;/home/zorbik/src/work/ptg-web/src/PTGenie.UI&#10;/home/zorbik/src/work/ptg-web&#10;/home/zorbik/src/work/ptg-web/src&#10;/home/zorbik/dwn/base16-eighties.icls" />
+    <property name="file.gist.reindex.count" value="220313" />
+    <property name="fileTypeChangedCounter" value="54" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="mt.showStatisticsAgreement" value="true" />
+    <property name="selected.color.option.type" value="MT_DIRECTORIES" />
+    <property name="settings.code.style.selected.tab.JavaScript" value="Wrapping and Braces" />
+    <property name="settings.code.style.selected.tab.SCSS" value="Arrangement" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.5.2" />
+  </component>
+</application>

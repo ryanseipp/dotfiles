@@ -1,0 +1,59 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Source Sans Pro" />
+    <option name="fontScale" value="1.0" />
+    <option name="fontSize" value="14" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="AFTER.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT" value="0" />
+    <property name="AFTER.DISTRACTION.MODE.HIDE_TOOL_STRIPES" value="true" />
+    <property name="AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_WHITESPACES_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_BREADCRUMBS" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_STATUS_BAR" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT" value="1" />
+    <property name="BEFORE.DISTRACTION.MODE.HIDE_TOOL_STRIPES" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_WHITESPACES_SHOWN" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_BREADCRUMBS" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR" value="true" />
+    <property name="DBE.Default.Dialect" value="" />
+    <property name="InstalledPluginsSearchHistory" value="hidden&#10;hidde&#10;hid&#10;hi&#10;dd" />
+    <property name="LAST_INJECTED_LANGUAGE" value="TSQL" />
+    <property name="Non.Modal.Commit" value="true" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="RD.Init.Cfg.2" value="true" />
+    <property name="RD.Init.DialogShown.Ide" value="true" />
+    <property name="RD.Switch.Laf" value="true" />
+    <property name="RiderUnitTestPanelSplitter.Horizontal" value="0.5" />
+    <property name="SettingsSearchHistory" value="Key&#10;hidden&#10;hi&#10;SQL&#10;enter" />
+    <property name="TrendingPluginsSearchHistory" value="dot" />
+    <property name="Tutorials.1" value="true" />
+    <property name="ask.about.ctrl.y.shortcut" value="true" />
+    <property name="evlsprt3.192" value="10" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/src/deal.com/src/tests&#10;/home/zorbik/src/deal.com/src/deal.com.sln&#10;/home/zorbik/src/deal.com/src&#10;/home/zorbik/src/work/ptg-web/src/PTGenie.sln&#10;/home/zorbik/src/work/ptg-web&#10;/home/zorbik/src/work/cornerstone-trading-app/src/Cornerstone.Trading.Persistence/Stores/AuditLogDataStore.cs&#10;/home/zorbik/src/work/cornerstone-trading-app/src/Cornerstone.Trading.sln&#10;/home/zorbik/src/dorothy-ai/src/Dorothy.AI.sln&#10;/home/zorbik/src/ryanseipp.com/src/ryanseipp.com.sln&#10;/home/zorbik/dwn/base16-eighties.icls" />
+    <property name="file.gist.reindex.count" value="66" />
+    <property name="fileTypeChangedCounter" value="9" />
+    <property name="ignoreUltimateEdition" value="true" />
+    <property name="last_open_solution_path" value="$USER_HOME$/src/deal.com/src" />
+    <property name="last_selected_template" value="Unit Test Project|.NET Core" />
+    <property name="last_selected_template_parameters" value="TargetFrameworkOverride=netcoreapp2.2;Type=NUnit;Language=C#;Auth=None;" />
+    <property name="settings.code.style.selected.tab.C#" value="Braces Layout" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+  </component>
+</application>

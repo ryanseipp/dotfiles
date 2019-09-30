@@ -1,0 +1,7 @@
+<code_scheme name="Default" version="173">
+  <option name="LINE_SEPARATOR" value="&#10;" />
+  <GoCodeStyleSettings>
+    <option name="ADD_LEADING_SPACE_TO_COMMENTS" value="true" />
+    <option name="IMPORT_SORTING" value="GOIMPORTS" />
+  </GoCodeStyleSettings>
+</code_scheme>

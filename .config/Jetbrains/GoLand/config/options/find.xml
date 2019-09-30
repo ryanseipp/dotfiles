@@ -1,0 +1,9 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="File '.../main.go [tendywatch]'" />
+    <option name="defaultScopeName" value="File '.../main.go [tendywatch]'" />
+    <option name="localWholeWordsOnly" value="true" />
+    <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
+    <option name="SEARCH_SCOPE" value="File '.../main.go [tendywatch]'" />
+  </component>
+</application>

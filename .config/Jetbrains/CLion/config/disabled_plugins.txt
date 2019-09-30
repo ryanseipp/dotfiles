@@ -1,0 +1,5 @@
+PerforceDirectPlugin
+Subversion
+artsiomch.cmake
+com.chrisrm.idea.MaterialThemeUI
+hg4idea

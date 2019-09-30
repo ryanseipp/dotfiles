@@ -1,0 +1,15 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="SQL/Expand column list" />
+    <ignoreAction name="SQL/Inject by Type" />
+    <ignoreAction name="SQL/Inline table alias" />
+    <ignoreAction name="SQL/Introduce table alias" />
+    <ignoreAction name="SQL/Qualify identifier" />
+    <ignoreAction name="SQL/Quote identifier" />
+    <ignoreAction name="SQL/Replace column name with an ordinal number" />
+    <ignoreAction name="SQL/Replace column number with a name" />
+    <ignoreAction name="SQL/Split string literal" />
+    <ignoreAction name="SQL/Unqualify identifier" />
+    <ignoreAction name="SQL/Unquote identifier" />
+  </component>
+</application>

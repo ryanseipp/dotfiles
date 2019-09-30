@@ -1,0 +1,39 @@
+<application>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/bin/node" />
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Source Sans Pro" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="InstalledPluginsSearchHistory" value="format&#10;clang" />
+    <property name="LayoutCode.codeCleanup" value="true" />
+    <property name="LayoutCode.optimizeImports" value="true" />
+    <property name="LayoutCode.processChangedText" value="true" />
+    <property name="LayoutCode.rearrangeEntriesC/C++" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="SettingsSearchHistory" value="config&#10;extension&#10;Format&#10;unused&#10;import" />
+    <property name="TrendingPluginsSearchHistory" value="Markdown&#10;Docker&#10;gitlab ci&#10;gitlab&#10;cmake" />
+    <property name="ask.about.ctrl.y.shortcut" value="true" />
+    <property name="evlsprt3.191" value="16" />
+    <property name="evlsprt3.192" value="10" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/src/cpp/beast-rest/CMakeLists.txt&#10;/home/zorbik/src/cpp/beast-rest&#10;/usr/bin/perf&#10;/home/zorbik/src/cpp/ryanseipp.com&#10;/home/zorbik/dwn/base16-eighties.icls" />
+    <property name="file.gist.reindex.count" value="468" />
+    <property name="fileTypeChangedCounter" value="18" />
+    <property name="lastTip" value="2" />
+    <property name="mt.showStatisticsAgreement" value="true" />
+    <property name="selected.color.option.type" value="OC.FORMAT_TOKEN" />
+    <property name="settings.code.style.selected.tab.ObjectiveC" value="New File Extensions" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.5.2" />
+  </component>
+</application>

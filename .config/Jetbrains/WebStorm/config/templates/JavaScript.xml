@@ -1,0 +1,22 @@
+<templateSet group="JavaScript">
+  <template name="tfc" value="import React from 'react';&#10;&#10;type $COMPONENT_NAME$Props = {&#10;  $PROP$: $PROP_TYPE$&#10;};&#10;&#10;const $COMPONENT_NAME$: React.FC&lt;$COMPONENT_NAME$Props&gt; = ({&#10;  $PROP$,&#10;}: $COMPONENT_NAME$Props) =&gt; {&#10;  return (&#10;    &lt;div&gt;&#10;      $END$&#10;    &lt;/div&gt;&#10;  );&#10;};&#10;&#10;export default $COMPONENT_NAME$;" description="Typescript Functional Component with props/state" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tsfc" value="import React from 'react';&#10;&#10;const $COMPONENT_NAME$: React.FC = () =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export default $COMPONENT_NAME$;" description="Typescript Stateless Functional Component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="capitalize(camelCase(1))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tsfcs" value="import React from 'react';&#10;import makeStyles from '@material-ui/core/styles/makeStyles';&#10;&#10;const useStyles = makeStyles({&#10;  container: {}&#10;});&#10;&#10;const $1$: React.FC = () =&gt; {&#10;  const classes = useStyles();&#10;&#10;  return (&#10;    &lt;div className={classes.container}&gt;&#10;      $END$&#10;    &lt;/div&gt;&#10;  );&#10;};&#10;&#10;export default $1$;&#10;" description="Typescript Stateless Functional Component with Material-UI styles" toReformat="false" toShortenFQNames="true">
+    <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>

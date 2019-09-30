@@ -1,0 +1,20 @@
+<application>
+  <component name="ProfilingConfigurationsManager" selectedConfigurationId="aea7ca53-6904-4980-96fc-b74fd8a5cacb">
+    <option name="configurations">
+      <PerformanceProfilingConfiguration>
+        <option name="name" value="Timeline" />
+        <option name="id" value="aea7ca53-6904-4980-96fc-b74fd8a5cacb" />
+      </PerformanceProfilingConfiguration>
+      <PerformanceProfilingConfiguration>
+        <option name="measureType" value="Sampling" />
+        <option name="name" value="Sampling" />
+        <option name="id" value="08a3e0e3-fae2-4957-9d76-d2955cdea0b7" />
+      </PerformanceProfilingConfiguration>
+      <PerformanceProfilingConfiguration>
+        <option name="measureType" value="Tracing" />
+        <option name="name" value="Tracing" />
+        <option name="id" value="e6f5af8a-f287-4527-b4c5-89e258320a26" />
+      </PerformanceProfilingConfiguration>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,15 @@
+<code_scheme name="Default" version="173">
+  <option name="RIGHT_MARGIN" value="80" />
+  <Objective-C>
+    <option name="FUNCTION_CALL_ARGUMENTS_ALIGN_MULTILINE" value="false" />
+  </Objective-C>
+  <clangFormatSettings>
+    <option name="ENABLED" value="true" />
+  </clangFormatSettings>
+  <codeStyleSettings language="ObjectiveC">
+    <option name="METHOD_CALL_CHAIN_WRAP" value="1" />
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>

@@ -1,0 +1,14 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="fileIcons" value="false" />
+    <option name="isContrastMode" value="true" />
+    <option name="isPsiIcons" value="false" />
+    <option name="isWizardShown" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="useMaterialIcons" value="false" />
+    <option name="settingsSelectedTab" value="2" />
+    <option name="selectedTheme" value="ONE_DARK" />
+    <option name="userId" value="-298f9282:16bf189b62a:-8000" />
+    <option name="version" value="3.10.0" />
+  </component>
+</application>
