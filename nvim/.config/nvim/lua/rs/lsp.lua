@@ -1,15 +1,20 @@
-require'lspconfig'.clangd.setup{}
-require'lspconfig'.cmake.setup{}
-require'lspconfig'.rust_analyzer.setup{}
-require'lspconfig'.dockerls.setup{}
-require'lspconfig'.eslint.setup{}
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.hls.setup{}
-require'lspconfig'.pylsp.setup{}
+local lsp = require 'lspconfig'
+lsp.clangd.setup{}
+lsp.cmake.setup{}
+lsp.rust_analyzer.setup{}
+lsp.dockerls.setup{}
+lsp.eslint.setup{}
+lsp.tsserver.setup{}
+lsp.pylsp.setup{}
 
 -- C#
-require'lspconfig'.omnisharp.setup{
+lsp.omnisharp.setup{
   cmd = {'/usr/bin/omnisharp', '--languageserver', '--hostPID', tostring(vim.fn.getpid())};
+}
+
+-- Haskell
+lsp.hls.setup{
+  root_dir = lsp.util.root_pattern('*')
 }
 
 -- Lua
@@ -17,7 +22,7 @@ local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
-require'lspconfig'.sumneko_lua.setup {
+lsp.sumneko_lua.setup {
   cmd = {'/usr/bin/lua-language-server'};
   settings = {
     Lua = {
