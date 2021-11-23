@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# ls
+alias ll='ls -lh --color=auto'
+alias la='ls -lAh --color=auto'
+
+# git
+alias gst='git status'
+alias ga='git add'
+alias gc='git checkout'
+
+# get fastest mirrors
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+
+# colorize grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+
+# confirm before overwriting
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# human readable sizes
+alias df='df -h'
+alias free='free -m'

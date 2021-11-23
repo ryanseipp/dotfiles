@@ -20,9 +20,12 @@ zle -N down-line-or-beginning-search
 autoload -Uz colors && colors
 
 source "$ZDOTDIR/zsh-functions"
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 zsh_add_file "zsh-exports"
+zsh_add_file "zsh-aliases"
 
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
