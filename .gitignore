@@ -1,1 +1,4 @@
 zsh/.config/zsh/plugins/*
+
+**/*.hi
+**/*.o
