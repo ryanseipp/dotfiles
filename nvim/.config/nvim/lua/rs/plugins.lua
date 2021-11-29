@@ -1,9 +1,8 @@
+vim.cmd [[packadd packer.nvim]]
+
 require('packer').startup({
   function(use)
     use 'wbthomason/packer.nvim'          -- Package manager
-
-    -- vim lua extensions
-    use 'tjdevries/astronauta.nvim'
 
     -- Code Completion
     use 'neovim/nvim-lspconfig'           -- LSP client configurations
@@ -18,28 +17,49 @@ require('packer').startup({
 
     -- Tree Sitter
     use {
-      'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate'
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+
+    -- Telescope
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/plenary.nvim'}}
+    }
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+    use 'nvim-telescope/telescope-hop.nvim'
+
+    -- useful keybinds
+    use {
+        'blackCauldron7/surround.nvim',
+        config = function()
+            require'surround'.setup {mappings_style = 'sandwich'}
+        end
     }
     use {
-      'blackCauldron7/surround.nvim',
-      config = function()
-	require'surround'.setup {mappings_style = 'sandwich'}
-      end
+        'numToStr/Comment.nvim',
+        config = function()
+            require'Comment'.setup()
+        end
     }
-    use {
-      'numToStr/Comment.nvim',
-      config = function()
-	require'Comment'.setup()
-      end
-    }
+    use {'phaazon/hop.nvim', branch = 'v1' }
 
     -- Colors
     use 'norcalli/nvim-colorizer.lua'
     use 'sainnhe/gruvbox-material'
 
     -- Status line
-    use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
 end,
 })
+
+vim.cmd [[
+    augroup packer_user_config
+        autocmd!
+        autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+    augroup end
+]]
 

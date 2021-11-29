@@ -1,7 +1,6 @@
-local inoremap = vim.keymap.inoremap
-local nnoremap = vim.keymap.nnoremap
+local g = require'rs.globals'
 
-local has_lsp, lspconfig = pcall(require, "lspconfig")
+local has_lsp, lspconfig = pcall(require, 'lspconfig')
 if not has_lsp then
   return
 end
@@ -29,28 +28,18 @@ local filetype_attach = setmetatable({
     end,
 })
 
-local buf_nnoremap = function(opts)
-    opts.buffer = 0
-    nnoremap(opts)
-end
-
-local buf_inoremap = function(opts)
-    opts.buffer = 0
-    inoremap(opts)
-end
-
 local custom_attach = function(client)
-    local filetype = vim.api.nvim_buf_get_option(0, "filetype")
+    local filetype = vim.api.nvim_buf_get_option(0, 'filetype')
 
-    buf_inoremap { "<c-s>", vim.lsp.buf.signature_help }
-    buf_nnoremap { "<space>cr", vim.lsp.buf.rename }
+    g.map_buf(0, 'i', '<c-s>', 'lua vim.lsp.buf.signature_help')
+    g.map_buf(0, 'n', '<space>cr', 'lua vim.lsp.buf.rename')
 
-    buf_nnoremap { "gd", vim.lsp.buf.definition }
-    buf_nnoremap { "gD", vim.lsp.buf.declaration }
-    buf_nnoremap { "gT", vim.lsp.buf.type_definition }
+    g.map_buf(0, 'n', 'gd', 'lua vim.lsp.buf.definition')
+    g.map_buf(0, 'n', 'gD', 'lua vim.lsp.buf.declaration')
+    g.map_buf(0, 'n', 'gT', 'lua vim.lsp.buf.type_definition')
 
-    buf_nnoremap { "<space>lr", "<cmd>lua require'rs.lsp.codelens'.run()<CR>" }
-    buf_nnoremap { "<space>rr", "LspRestart" }
+    g.map_buf(0, 'n', '<space>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
+    g.map_buf(0, 'n', '<space>rr', 'LspRestart')
 
     -- Set autocommands conditional on server_capabilities
     if client.resolved_capabilities.document_highlight then
@@ -67,8 +56,8 @@ local custom_attach = function(client)
       vim.cmd [[
        augroup lsp_document_codelens
           au! * <buffer>
-          autocmd BufEnter ++once         <buffer> lua require"vim.lsp.codelens".refresh()
-          autocmd BufWritePost,CursorHold <buffer> lua require"vim.lsp.codelens".refresh()
+          autocmd BufEnter ++once         <buffer> lua require'vim.lsp.codelens'.refresh()
+          autocmd BufWritePost,CursorHold <buffer> lua require'vim.lsp.codelens'.refresh()
         augroup END
       ]]
     end
@@ -79,7 +68,7 @@ end
 
 local updated_capabilities = vim.lsp.protocol.make_client_capabilities()
 updated_capabilities.textDocument.codeLens = { dynamicRegistration = false }
-updated_capabilities = require("cmp_nvim_lsp").update_capabilities(updated_capabilities)
+updated_capabilities = require('cmp_nvim_lsp').update_capabilities(updated_capabilities)
 
 -- define lang server configs
 local servers = {
@@ -88,15 +77,15 @@ local servers = {
     eslint = true,
     pylsp = true,
 
-    cmake = (1 == vim.fn.executable "cmake-lang-server"),
+    cmake = (1 == vim.fn.executable 'cmake-lang-server'),
 
     clangd = {
         cmd = {
-            "clangd",
-            "--background-index",
-            "--suggest-missing-includes",
-            "--clang-tidy",
-            "--header-insertion=iwyu",
+            'clangd',
+            '--background-index',
+            '--suggest-missing-includes',
+            '--clang-tidy',
+            '--header-insertion=iwyu',
         },
         init_options = {
             clangdFileStatus = true,
@@ -112,22 +101,22 @@ local servers = {
     },
 
     tsserver = {
-        cmd = { "typescript-language-server", "--stdio" },
+        cmd = { 'typescript-language-server', '--stdio' },
         filetypes = {
-            "javascript",
-            "javascriptreact",
-            "javascript.jsx",
-            "typescript",
-            "typescriptreact",
-            "typescript.tsx",
+            'javascript',
+            'javascriptreact',
+            'javascript.jsx',
+            'typescript',
+            'typescriptreact',
+            'typescript.tsx',
         },
     },
 }
 
 -- Lua
 local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
+table.insert(runtime_path, 'lua/?.lua')
+table.insert(runtime_path, 'lua/?/init.lua')
 
 lspconfig.sumneko_lua.setup {
   cmd = {'/usr/bin/lua-language-server'};
@@ -145,7 +134,7 @@ lspconfig.sumneko_lua.setup {
       },
       workspace = {
         -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
+        library = vim.api.nvim_get_runtime_file('', true),
       },
       -- Do not send telemetry data containing a randomized but unique identifier
       telemetry = {
@@ -160,11 +149,11 @@ local setup_server = function(server, config)
         return
     end
 
-    if type(config) ~= "table" then
+    if type(config) ~= 'table' then
         config = {}
     end
 
-    config = vim.tbl_deep_extend("force", {
+    config = vim.tbl_deep_extend('force', {
         on_init = custom_init,
         on_attach = custom_attach,
         capabilities = updated_capabilities,

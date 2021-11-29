@@ -80,11 +80,6 @@ _G.packer_plugins = {
     path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["astronauta.nvim"] = {
-    loaded = true,
-    path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/astronauta.nvim",
-    url = "https://github.com/tjdevries/astronauta.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -114,6 +109,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
+  },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/hop.nvim",
+    url = "https://github.com/phaazon/hop.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -155,11 +155,31 @@ _G.packer_plugins = {
     path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   ["surround.nvim"] = {
     config = { "\27LJ\1\2U\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\19mappings_style\rsandwich\nsetup\rsurround\frequire\0" },
     loaded = true,
     path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/surround.nvim",
     url = "https://github.com/blackCauldron7/surround.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
+  ["telescope-hop.nvim"] = {
+    loaded = true,
+    path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/telescope-hop.nvim",
+    url = "https://github.com/nvim-telescope/telescope-hop.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/zorbik/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
 

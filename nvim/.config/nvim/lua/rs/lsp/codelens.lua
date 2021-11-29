@@ -22,8 +22,8 @@ M.run = function()
 
   local client_id = next(vim.lsp.buf_get_clients(bufnr))
   local client = vim.lsp.get_client_by_id(client_id)
-  client.request("workspace/executeCommand", lens.command, function(...)
-    local result = vim.lsp.handlers["workspace/executeCommand"](...)
+  client.request('workspace/executeCommand', lens.command, function(...)
+    local result = vim.lsp.handlers['workspace/executeCommand'](...)
     vim.lsp.codelens.refresh()
     return result
   end, bufnr)

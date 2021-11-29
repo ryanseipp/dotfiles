@@ -1,11 +1,10 @@
-if require "rs.first_load"() then
+if require 'rs.first_load'() then
   return
 end
 
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
-vim.cmd [[ runtime plugin/astronauta.vim ]]
-
-require "rs.plugins"
-require "rs.lsp"
-
+require 'rs.plugins'
+require 'rs.lsp'
+require 'rs.telescope.setup'
+require 'rs.telescope.mappings'
