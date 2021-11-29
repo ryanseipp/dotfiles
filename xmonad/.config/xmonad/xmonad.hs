@@ -271,6 +271,7 @@ myManageHook = composeAll
 myStartupHook :: X ()
 myStartupHook = do
     spawnOnce "picom &"
+    spawnOnce "feh --bg-scale ~/Pictures/wallpapers/landscape-minimal-panaromic.jpg ~/Pictures/wallpapers/west-of-the-sun.jpg"
     setWMName "LG3D"
 
 ------------------------------------------------------------------------

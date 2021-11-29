@@ -48,7 +48,7 @@ Config {
       Run Memory ["-t","<fc=#8ec07c><fn=1>\xf2db</fn></fc> mem: <used>M (<usedratio>%)"] 10,
       Run DiskU [("/", "<fc=#8ec07c><fn=1>\xf0a0</fn></fc> hdd: <free> free")] [] 60,
       Run Network "enp7s0" ["-t","<fc=#8ec07c><fn=1>\xf796</fn></fc> <dev>: <rx>KB|<tx>KB"] 10,
-      Run Date "<fc=#8ec07c><fn=1>\xf017</fn></fc> %b %d %Y %H:%M" "date" 50,
+      Run Date "<fc=#8ec07c><fn=1>\xf017</fn></fc> %b %d %Y %I:%M %P" "date" 50,
       Run Com "uname" ["-r"] "" 36000,
       Run UnsafeStdinReader
     ],
