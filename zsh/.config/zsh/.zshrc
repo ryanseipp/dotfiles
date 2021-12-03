@@ -43,7 +43,8 @@ zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
 [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.local/share/nvm"
-source /usr/share/nvm/nvm.sh
+source /usr/share/nvm/nvm.sh --no-use
+
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
