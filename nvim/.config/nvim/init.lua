@@ -1,3 +1,5 @@
+pcall(require, "impatient")
+
 if require 'rs.first_load'() then
   return
 end

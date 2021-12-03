@@ -3,6 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 require('packer').startup({
   function(use)
     use 'wbthomason/packer.nvim'          -- Package manager
+    use 'lewis6991/impatient.nvim'        -- speed up require
 
     -- Code Completion
     use 'neovim/nvim-lspconfig'           -- LSP client configurations
@@ -19,6 +20,23 @@ require('packer').startup({
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
+    }
+    use 'windwp/nvim-ts-autotag'
+    use 'windwp/nvim-autopairs'
+
+    -- startup
+    use {
+        'goolord/alpha-nvim',
+        requires = {'kyazdani42/nvim-web-devicons'},
+        config = function()
+            require'alpha'.setup(require'alpha.themes.startify'.opts)
+        end
+    }
+
+    -- File tree
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = {'kyazdani42/nvim-web-devicons'}
     }
 
     -- Telescope

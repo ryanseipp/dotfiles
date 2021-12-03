@@ -28,18 +28,22 @@ local filetype_attach = setmetatable({
     end,
 })
 
-local custom_attach = function(client)
-    local filetype = vim.api.nvim_buf_get_option(0, 'filetype')
+local custom_attach = function(client, bufnr)
+    local filetype = vim.api.nvim_buf_get_option(bufnr, 'filetype')
 
-    g.map_buf(0, 'i', '<c-s>', 'lua vim.lsp.buf.signature_help')
-    g.map_buf(0, 'n', '<space>cr', 'lua vim.lsp.buf.rename')
+    g.map_buf(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
+    g.map_buf(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
+    g.map_buf(bufnr, 'n', 'gT', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
+    g.map_buf(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
+    g.map_buf(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
+    g.map_buf(bufnr, 'n', '<c-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
+    g.map_buf(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
+    g.map_buf(bufnr, 'n', '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
+    g.map_buf(bufnr, 'n', '<leader>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
+    g.map_buf(bufnr, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
+    g.map_buf(bufnr, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
 
-    g.map_buf(0, 'n', 'gd', 'lua vim.lsp.buf.definition')
-    g.map_buf(0, 'n', 'gD', 'lua vim.lsp.buf.declaration')
-    g.map_buf(0, 'n', 'gT', 'lua vim.lsp.buf.type_definition')
-
-    g.map_buf(0, 'n', '<space>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
-    g.map_buf(0, 'n', '<space>rr', 'LspRestart')
+    g.map_buf(bufnr, 'n', '<leader>rr', '<cmd>LspRestart<CR>')
 
     -- Set autocommands conditional on server_capabilities
     if client.resolved_capabilities.document_highlight then
@@ -72,10 +76,12 @@ updated_capabilities = require('cmp_nvim_lsp').update_capabilities(updated_capab
 
 -- define lang server configs
 local servers = {
+    ansiblels = true,
     rust_analyzer = true,
     dockerls = true,
     eslint = true,
     pylsp = true,
+    terraformls = true,
 
     cmake = (1 == vim.fn.executable 'cmake-lang-server'),
 
@@ -93,7 +99,8 @@ local servers = {
     },
 
     omnisharp = {
-        cmd = {'/usr/bin/omnisharp', '--languageserver', '--hostPID', tostring(vim.fn.getpid())},
+        cmd = {'/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid())},
+        root_dir = lspconfig.util.root_pattern('*.sln'),
     },
 
     hls = {
