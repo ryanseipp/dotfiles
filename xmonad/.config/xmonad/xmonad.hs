@@ -1,34 +1,41 @@
  -- Base
-import XMonad
-import System.Exit
+import           System.Exit (exitSuccess)
+import           XMonad
+    (ChangeLayout (NextLayout), Default (def), IncMasterN (IncMasterN), KeyMask, Resize (Expand, Shrink), X,
+    XConfig (XConfig, borderWidth, clickJustFocuses, focusFollowsMouse, focusedBorderColor, handleEventHook, layoutHook, logHook, manageHook, modMask, mouseBindings, normalBorderColor, startupHook, terminal, workspaces),
+    button1, button2, button3, className, composeAll, doFloat, doIgnore, focus, io, kill, mod4Mask, mouseMoveWindow,
+    mouseResizeWindow, refresh, resource, sendMessage, spawn, windows, withFocused, xmonad, (-->), (<+>), (=?))
 import qualified XMonad.StackSet as W
 
  -- Data
-import Data.Monoid
 import qualified Data.Map as M
+import           Data.Monoid ()
+import           Data.Strict.Maybe (fromJust)
 
  -- Layouts
-import XMonad.Layout.ResizableTile
+import XMonad.Layout.ResizableTile (ResizableTall (ResizableTall))
 
  -- Layout Modifiers
-import XMonad.Layout.LayoutModifier
-import XMonad.Layout.Renamed
-import XMonad.Layout.Spacing
-import XMonad.Layout.NoBorders
+import XMonad.Layout.LayoutModifier (ModifiedLayout)
+import XMonad.Layout.NoBorders (smartBorders, withBorder)
+import XMonad.Layout.Renamed (Rename (Replace), renamed)
+import XMonad.Layout.ShowWName (SWNConfig (swn_bgcolor, swn_color, swn_fade, swn_font), showWName')
+import XMonad.Layout.Spacing (Border (Border), Spacing, spacingRaw)
 
  -- Util
-import XMonad.Util.Run
-import XMonad.Util.SpawnOnce
+import XMonad.Util.EZConfig (additionalKeysP)
+import XMonad.Util.Run (hPutStrLn, spawnPipe)
+import XMonad.Util.SpawnOnce (spawnOnce)
 
  -- Hooks
-import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.SetWMName
-import XMonad.Config.Dmwit (altMask)
-import XMonad.Hooks.DynamicLog (dynamicLogWithPP, xmobarPP, PP (ppOutput, ppCurrent, ppVisible, ppHidden, ppHiddenNoWindows, ppTitle, ppSep, ppUrgent, ppOrder), wrap, shorten, xmobarColor)
-import XMonad.Util.EZConfig (additionalKeysP)
+import XMonad.Hooks.DynamicLog
+    (PP (ppCurrent, ppHidden, ppHiddenNoWindows, ppOrder, ppOutput, ppSep, ppTitle, ppUrgent, ppVisible),
+    dynamicLogWithPP, shorten, wrap, xmobarColor, xmobarPP)
 import XMonad.Hooks.EwmhDesktops (ewmh)
-import Data.Strict.Maybe (fromJust)
-import XMonad.Layout.ShowWName
+import XMonad.Hooks.ManageDocks (avoidStruts, docksEventHook, manageDocks)
+import XMonad.Hooks.SetWMName (setWMName)
+
+import GruvboxDarkHard
 
 myTerminal :: String
 myTerminal = "alacritty"
@@ -44,18 +51,6 @@ myFocusFollowsMouse = True
 myClickJustFocuses :: Bool
 myClickJustFocuses = False
 
--- The default number of workspaces (virtual screens) and their names.
--- By default we use numeric strings, but any string may be used as a
--- workspace name. The number of workspaces is determined by the length
--- of this list.
---
--- A tagging example:
---
--- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
---
-
--- Border colors for unfocused and focused windows, respectively.
---
 myNormalBorderColor = "#dddddd"
 myFocusedBorderColor = "#ff0000"
 
@@ -140,8 +135,6 @@ myKeys =
     -- Restart xmonad
     , ("M-q", spawn "xmonad --recompile; killall xmobar; xmonad --restart")
 
-    -- Run xmessage with a summary of the default keybindings (useful for beginners)
-    , ("M-S-/", spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     ]
     -- ++
 
@@ -270,6 +263,7 @@ myManageHook = composeAll
 -- By default, do nothing.
 myStartupHook :: X ()
 myStartupHook = do
+    spawn "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144.00 --output HDMI-A-2 --mode 2560x1440 --rate 144.00 --left-of DisplayPort-0"
     spawnOnce "picom &"
     spawnOnce "feh --bg-scale ~/Pictures/wallpapers/landscape-minimal-panaromic.jpg ~/Pictures/wallpapers/west-of-the-sun.jpg"
     setWMName "LG3D"
@@ -317,53 +311,3 @@ main = do
           }
     } `additionalKeysP` myKeys
 
--- | Finally, a copy of the default bindings in simple textual tabular format.
-help :: String
-help = unlines ["The default modifier key is 'alt'. Default keybindings:",
-    "",
-    "-- launching and killing programs",
-    "mod-Shift-Enter  Launch xterminal",
-    "mod-p            Launch dmenu",
-    "mod-Shift-p      Launch gmrun",
-    "mod-Shift-c      Close/kill the focused window",
-    "mod-Space        Rotate through the available layout algorithms",
-    "mod-Shift-Space  Reset the layouts on the current workSpace to default",
-    "mod-n            Resize/refresh viewed windows to the correct size",
-    "",
-    "-- move focus up or down the window stack",
-    "mod-Tab        Move focus to the next window",
-    "mod-Shift-Tab  Move focus to the previous window",
-    "mod-j          Move focus to the next window",
-    "mod-k          Move focus to the previous window",
-    "mod-m          Move focus to the master window",
-    "",
-    "-- modifying the window order",
-    "mod-Return   Swap the focused window and the master window",
-    "mod-Shift-j  Swap the focused window with the next window",
-    "mod-Shift-k  Swap the focused window with the previous window",
-    "",
-    "-- resizing the master/slave ratio",
-    "mod-h  Shrink the master area",
-    "mod-l  Expand the master area",
-    "",
-    "-- floating layer support",
-    "mod-t  Push window back into tiling; unfloat and re-tile it",
-    "",
-    "-- increase or decrease number of windows in the master area",
-    "mod-comma  (mod-,)   Increment the number of windows in the master area",
-    "mod-period (mod-.)   Deincrement the number of windows in the master area",
-    "",
-    "-- quit, or restart",
-    "mod-Shift-q  Quit xmonad",
-    "mod-q        Restart xmonad",
-    "mod-[1..9]   Switch to workSpace N",
-    "",
-    "-- Workspaces & screens",
-    "mod-Shift-[1..9]   Move client to workspace N",
-    "mod-{w,e,r}        Switch to physical/Xinerama screens 1, 2, or 3",
-    "mod-Shift-{w,e,r}  Move client to screen 1, 2, or 3",
-    "",
-    "-- Mouse bindings: default actions bound to mouse events",
-    "mod-button1  Set the window to floating mode and move by dragging",
-    "mod-button2  Raise the window to the top of the stack",
-    "mod-button3  Set the window to floating mode and resize by dragging"]

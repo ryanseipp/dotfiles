@@ -39,7 +39,7 @@ local custom_attach = function(client, bufnr)
     g.map_buf(bufnr, 'n', '<c-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
     g.map_buf(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
     g.map_buf(bufnr, 'n', '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
-    g.map_buf(bufnr, 'n', '<leader>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
+    -- g.map_buf(bufnr, 'n', '<leader>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
     g.map_buf(bufnr, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
     g.map_buf(bufnr, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
 
@@ -74,6 +74,10 @@ local updated_capabilities = vim.lsp.protocol.make_client_capabilities()
 updated_capabilities.textDocument.codeLens = { dynamicRegistration = false }
 updated_capabilities = require('cmp_nvim_lsp').update_capabilities(updated_capabilities)
 
+local lua_runtime_path = vim.split(package.path, ';')
+table.insert(lua_runtime_path, 'lua/?.lua')
+table.insert(lua_runtime_path, 'lua/?/init.lua')
+
 -- define lang server configs
 local servers = {
     ansiblels = true,
@@ -83,7 +87,7 @@ local servers = {
     pylsp = true,
     terraformls = true,
 
-    cmake = (1 == vim.fn.executable 'cmake-lang-server'),
+    cmake = (1 == vim.fn.executable 'cmake-language-server'),
 
     clangd = {
         cmd = {
@@ -105,6 +109,12 @@ local servers = {
 
     hls = {
         root_dir = lspconfig.util.root_pattern('*'),
+        settings = {
+            haskell = {
+                hlintOn = true,
+                formattingProvider = "stylish-haskell"
+            }
+        }
     },
 
     tsserver = {
@@ -118,37 +128,32 @@ local servers = {
             'typescript.tsx',
         },
     },
-}
 
--- Lua
-local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, 'lua/?.lua')
-table.insert(runtime_path, 'lua/?/init.lua')
-
-lspconfig.sumneko_lua.setup {
-  cmd = {'/usr/bin/lua-language-server'};
-  settings = {
-    Lua = {
-      runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
-        -- Setup your lua path
-        path = runtime_path,
-      },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file('', true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
+    sumneko_lua = {
+      cmd = {'/usr/bin/lua-language-server'};
+      settings = {
+        Lua = {
+          runtime = {
+            -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+            version = 'LuaJIT',
+            -- Setup your lua path
+            path = lua_runtime_path,
+          },
+          diagnostics = {
+            -- Get the language server to recognize the `vim` global
+            globals = {'vim'},
+          },
+          workspace = {
+            -- Make the server aware of Neovim runtime files
+            library = vim.api.nvim_get_runtime_file('', true),
+          },
+          -- Do not send telemetry data containing a randomized but unique identifier
+          telemetry = {
+            enable = false,
+          },
+        },
       },
     },
-  },
 }
 
 local setup_server = function(server, config)
