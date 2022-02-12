@@ -16,6 +16,14 @@ require('packer').startup({
     use 'hrsh7th/cmp-nvim-lsp'            -- completion from lsp
     use 'saadparwaiz1/cmp_luasnip'        -- snippets for cmp
 
+    -- git integration
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+    }
+
     -- Tree Sitter
     use {
         'nvim-treesitter/nvim-treesitter',
