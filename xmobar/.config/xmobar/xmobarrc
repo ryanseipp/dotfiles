@@ -1,5 +1,5 @@
 Config {
-  font = "xft:SourceCodePro:size=10:antialias=true"
+  font = "xft:SauceCodePro Nerd Font:size=10:antialias=true"
   additionalFonts = [
     "xft:Font Awesome 5 Free Solid:pixelsize=12",
     "xft:Font Awesome 5 Brands:pixelsize=12"
