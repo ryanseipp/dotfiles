@@ -55,13 +55,10 @@ require('packer').startup({
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
     use 'nvim-telescope/telescope-hop.nvim'
 
+    -- fancy selections
+    use 'stevearc/dressing.nvim'
+
     -- useful keybinds
-    use {
-        'blackCauldron7/surround.nvim',
-        config = function()
-            require'surround'.setup {mappings_style = 'sandwich'}
-        end
-    }
     use {
         'numToStr/Comment.nvim',
         config = function()

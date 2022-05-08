@@ -40,8 +40,9 @@ local custom_attach = function(client, bufnr)
     g.map_buf(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
     g.map_buf(bufnr, 'n', '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
     -- g.map_buf(bufnr, 'n', '<leader>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
-    g.map_buf(bufnr, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
-    g.map_buf(bufnr, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
+    g.map_buf(bufnr, 'n', '[d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+    g.map_buf(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+    g.map_buf(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 
     g.map_buf(bufnr, 'n', '<leader>rr', '<cmd>LspRestart<CR>')
 
@@ -84,6 +85,7 @@ local servers = {
     rust_analyzer = true,
     dockerls = true,
     eslint = true,
+    gopls = true,
     pylsp = true,
     terraformls = true,
 
@@ -100,6 +102,7 @@ local servers = {
         init_options = {
             clangdFileStatus = true,
         },
+        root_dir = lspconfig.util.root_pattern('*/**/compile_commands.json'),
     },
 
     omnisharp = {

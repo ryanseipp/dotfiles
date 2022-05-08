@@ -5,6 +5,8 @@ local cmp = require 'cmp'
 
 cmp.setup {
   mapping = {
+    ["<C-n>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
+    ["<C-p>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-e>'] = cmp.mapping.close(),
@@ -31,9 +33,9 @@ cmp.setup {
     format = lspkind.cmp_format {
       with_text = true,
       menu = {
-        buffer = '[buf]',
+        buffer = '[BUF]',
 	nvim_lsp = '[LSP]',
-	nvim_lua = '[lua]',
+	nvim_lua = '[LUA]',
 	path = '[path]',
       },
     },

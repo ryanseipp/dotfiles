@@ -7,7 +7,7 @@ tree.setup {
     },
     view = {
         width = 60,
-        auto_resize = true,
+        -- auto_resize = true,
     }
 }
 

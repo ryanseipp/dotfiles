@@ -25,7 +25,6 @@ map_tele('<leader>ltd', 'lsp_type_definitions')
 map_tele('<leader>ld', 'lsp_definitions')
 map_tele('<leader>li', 'lsp_implementations')
 map_tele('<leader>lr', 'lsp_references')
-map_tele('<leader>ca', 'lsp_code_actions')
 map_tele('<leader>q', 'quickfix')
 
 -- nvim
