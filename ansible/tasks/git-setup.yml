@@ -1,0 +1,29 @@
+- name: Git personal setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "{{ name }}"
+  tags:
+  - git-personal
+- name: Git personal setup email
+  git_config:
+    name: user.email
+    scope: global
+    value: "{{ personal_email }}"
+  tags:
+  - git-personal
+
+- name: Git work setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "{{ name }}"
+  tags:
+  - git-work
+- name: Git work setup email
+  git_config:
+    name: user.email
+    scope: global
+    value: "{{ work_email }}"
+  tags:
+  - git-work

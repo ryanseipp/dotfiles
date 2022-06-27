@@ -5,6 +5,23 @@ require('packer').startup({
     use 'wbthomason/packer.nvim'          -- Package manager
     use 'lewis6991/impatient.nvim'        -- speed up require
 
+    -- startup
+    use {
+        'goolord/alpha-nvim',
+        requires = {'kyazdani42/nvim-web-devicons'},
+        config = function()
+            require'alpha'.setup(require'alpha.themes.startify'.opts)
+        end
+    }
+
+    -- Tree Sitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use 'windwp/nvim-ts-autotag'
+    use 'windwp/nvim-autopairs'
+
     -- Code Completion
     use 'neovim/nvim-lspconfig'           -- LSP client configurations
     use 'onsails/lspkind-nvim'            -- LSP pictograms
@@ -16,36 +33,10 @@ require('packer').startup({
     use 'hrsh7th/cmp-nvim-lsp'            -- completion from lsp
     use 'saadparwaiz1/cmp_luasnip'        -- snippets for cmp
 
-    -- git integration
-    use {
-        'lewis6991/gitsigns.nvim',
-        requires = {
-            'nvim-lua/plenary.nvim'
-        },
-    }
-
-    -- Tree Sitter
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
-    use 'windwp/nvim-ts-autotag'
-    use 'windwp/nvim-autopairs'
-
-    -- startup
-    use {
-        'goolord/alpha-nvim',
-        requires = {'kyazdani42/nvim-web-devicons'},
-        config = function()
-            require'alpha'.setup(require'alpha.themes.startify'.opts)
-        end
-    }
-
-    -- File tree
-    use {
-        'kyazdani42/nvim-tree.lua',
-        requires = {'kyazdani42/nvim-web-devicons'}
-    }
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
 
     -- Telescope
     use {
@@ -54,6 +45,21 @@ require('packer').startup({
     }
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
     use 'nvim-telescope/telescope-hop.nvim'
+    use 'nvim-telescope/telescope-dap.nvim'
+
+    -- git integration
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+    }
+
+    -- File tree
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = {'kyazdani42/nvim-web-devicons'}
+    }
 
     -- fancy selections
     use 'stevearc/dressing.nvim'

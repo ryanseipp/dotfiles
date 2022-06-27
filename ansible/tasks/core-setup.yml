@@ -1,0 +1,128 @@
+- name: Install core packages
+  become: true
+  community.general.pacman:
+    name:
+      - git
+      - zsh
+      - stow
+      - picom
+      - xdotool
+      - awesome
+      - xmonad
+      - xmonad-contrib
+      - xmobar
+      - neovim
+      - alacritty
+      - btop
+      - feh
+      - firefox
+      - pavucontrol
+      - pulsemixer
+      - reflector
+      - unzip
+      - zip
+    state: present
+  tags:
+    - install
+    - core
+
+- name: Install core development packages
+  become: true
+  community.general.pacman:
+    name:
+      - docker
+      - docker-compose
+    state: present
+  tags:
+    - install
+    - core
+    - dev
+
+- name: Install cpp development packages
+  become: true
+  community.general.pacman:
+    name:
+      - cmake
+      - clang
+      - gcc11
+      - lldb
+      - gdb
+      - ccache
+      - cppcheck
+    state: present
+  tags:
+    - install
+    - core
+    - dev
+
+- name: Install rust development packages
+  become: true
+  community.general.pacman:
+    name: rust
+    state: present
+  tags:
+    - install
+    - core
+    - dev
+
+- name: Install go development packages
+  become: true
+  community.general.pacman:
+    name: go
+    state: present
+  tags:
+    - install
+    - core
+    - dev
+
+- name: Install dotnet development packages
+  become: true
+  community.general.pacman:
+    name:
+      - dotnet-host
+      - dotnet-runtime
+      - dotnet-sdk
+      - dotnet-targeting-pack
+    state: present
+  tags:
+    - install
+    - core
+    - dev
+
+- name: Install node development packages
+  become: true
+  community.general.pacman:
+    name: yarn
+    state: present
+  tags:
+    - install
+    - core
+    - dev
+
+- name: Install core aur packages
+  kewlfft.aur.aur:
+    use: yay
+    name:
+      - nvm
+      - nerd-fonts-complete
+      - zsh-theme-powerlevel10k-git
+    state: present
+  become: yes
+  become_user: aur_builder
+  tags:
+    - install
+    - install_aur
+    - core
+
+- name: Install cpp aur packages
+  kewlfft.aur.aur:
+    use: yay
+    name: conan
+    state: present
+  become: yes
+  become_user: aur_builder
+  tags:
+    - install
+    - install_aur
+    - core
+    - dev

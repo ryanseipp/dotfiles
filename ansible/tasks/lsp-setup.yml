@@ -1,0 +1,32 @@
+- name: Install lsp servers
+  become: yes
+  community.general.pacman:
+    name:
+      - gopls
+      - haskell-language-server
+      - lua-language-server
+      - rust-analyzer
+      - typescript-language-server
+    state: present
+  tags:
+    - install
+    - dev
+    - lsp
+
+- name: Install aur lsp servers
+  kewlfft.aur.aur:
+    use: yay
+    name:
+      - ansible-language-server
+      - cmake-language-server
+      - dockerfile-language-server
+      - vscode-langservers-extracted
+    state: present
+  become: yes
+  become_user: aur_builder
+  tags:
+    - install
+    - install_aur
+    - dev
+    - lsp
+
