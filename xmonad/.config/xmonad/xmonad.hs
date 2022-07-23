@@ -481,11 +481,11 @@ myKeys c =
   subKeys "Xmonad Essentials"
   [ ("M-C-r", addName "Recompile XMonad"       $ spawn "xmonad --recompile")
   , ("M-S-r", addName "Restart XMonad"         $ spawn "xmonad --restart")
-  , ("M-S-q", addName "Quit XMonad"            $ sequence_ [io exitSuccess])
+  , ("M-S-q", addName "Quit XMonad"            $ io exitSuccess)
   , ("M-S-c", addName "Kill focused window"    $ kill1)
   , ("M-S-a", addName "Kill all windows on WS" $ killAll)
-  , ("M-S-<Return>", addName "Run prompt"      $ sequence_ [spawn "dm-run"])
-  , ("M-/", addName "DTOS Help"                $ spawn "dtos-help")]
+  , ("M-S-<Return>", addName "Run prompt"      $ spawn "dmenu_run")]
+  -- , ("M-/", addName "DTOS Help"                $ spawn "dtos-help")]
 
   ^++^ subKeys "Switch to workspace"
   [ ("M-1", addName "Switch to workspace 1"    $ (windows $ W.greedyView $ myWorkspaces !! 0))
@@ -531,7 +531,7 @@ myKeys c =
   [ ("M-p h", addName "List all dmscripts"     $ spawn "dm-hub")
   , ("M-p a", addName "Choose ambient sound"   $ spawn "dm-sounds")
   , ("M-p b", addName "Set background"         $ spawn "dm-setbg")
-  , ("M-p c", addName "Choose color scheme"    $ spawn "dtos-colorscheme")
+  -- , ("M-p c", addName "Choose color scheme"    $ spawn "dtos-colorscheme")
   , ("M-p C", addName "Pick color from scheme" $ spawn "dm-colpick")
   , ("M-p e", addName "Edit config files"      $ spawn "dm-confedit")
   , ("M-p i", addName "Take a screenshot"      $ spawn "dm-maim")

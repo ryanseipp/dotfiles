@@ -82,7 +82,6 @@ table.insert(lua_runtime_path, 'lua/?/init.lua')
 -- define lang server configs
 local servers = {
     ansiblels = true,
-    rust_analyzer = true,
     dockerls = true,
     eslint = true,
     gopls = true,
@@ -103,6 +102,16 @@ local servers = {
             clangdFileStatus = true,
         },
         root_dir = lspconfig.util.root_pattern('*/**/compile_commands.json'),
+    },
+
+    rust_analyzer = {
+        settings = {
+            cargo = {
+                buildScripts = {
+                    enable = true
+                }
+            }
+        }
     },
 
     omnisharp = {
