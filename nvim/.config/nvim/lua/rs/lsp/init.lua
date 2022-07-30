@@ -144,11 +144,15 @@ local servers = {
           },
           diagnostics = {
             -- Get the language server to recognize the `vim` global
-            globals = {'vim'},
+            globals = {'vim', 'awesome', 'client', 'root'},
           },
           workspace = {
             -- Make the server aware of Neovim runtime files
-            library = vim.api.nvim_get_runtime_file('', true),
+            library = {
+                ['/usr/share/nvim/runtime/lua'] = true,
+                ['/usr/share/nvim/runtime/lua/vim/lsp'] = true,
+                ['/usr/share/awesome/lib'] = true
+            },
           },
           -- Do not send telemetry data containing a randomized but unique identifier
           telemetry = {
