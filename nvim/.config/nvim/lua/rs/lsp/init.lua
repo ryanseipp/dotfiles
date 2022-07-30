@@ -39,7 +39,6 @@ local custom_attach = function(client, bufnr)
     g.map_buf(bufnr, 'n', '<c-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
     g.map_buf(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
     g.map_buf(bufnr, 'n', '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
-    -- g.map_buf(bufnr, 'n', '<leader>lr', "<cmd>lua require'rs.lsp.codelens'.run()<CR>")
     g.map_buf(bufnr, 'n', '[d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
     g.map_buf(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
     g.map_buf(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
@@ -81,14 +80,15 @@ table.insert(lua_runtime_path, 'lua/?/init.lua')
 
 -- define lang server configs
 local servers = {
-    ansiblels = true,
-    dockerls = true,
-    eslint = true,
-    gopls = true,
-    pylsp = true,
-    terraformls = true,
-
+    ansiblels = (1 == vim.fn.executable 'ansible-language-server'),
+    bashls = (1 == vim.fn.executable 'bash-language-server'),
     cmake = (1 == vim.fn.executable 'cmake-language-server'),
+    dockerls = (1 == vim.fn.executable 'docker-langserver'),
+    eslint = (1 == vim.fn.executable 'vscode-eslint-language-server'),
+    gopls = (1 == vim.fn.executable 'gople'),
+    pylsp = (1 == vim.fn.executable 'pylsp'),
+    terraformls = (1 == vim.fn.executable 'terraform-ls'),
+    yamlls = (1 == vim.fn.executable 'yaml-language-server'),
 
     clangd = {
         cmd = {
@@ -104,21 +104,6 @@ local servers = {
         root_dir = lspconfig.util.root_pattern('*/**/compile_commands.json'),
     },
 
-    rust_analyzer = {
-        settings = {
-            cargo = {
-                buildScripts = {
-                    enable = true
-                }
-            }
-        }
-    },
-
-    omnisharp = {
-        cmd = {'/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid())},
-        root_dir = lspconfig.util.root_pattern('*.sln'),
-    },
-
     hls = {
         root_dir = lspconfig.util.root_pattern('*'),
         settings = {
@@ -129,16 +114,22 @@ local servers = {
         }
     },
 
-    tsserver = {
-        cmd = { 'typescript-language-server', '--stdio' },
-        filetypes = {
-            'javascript',
-            'javascriptreact',
-            'javascript.jsx',
-            'typescript',
-            'typescriptreact',
-            'typescript.tsx',
-        },
+    omnisharp = {
+        cmd = {'/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid())},
+        enable_import_completion = true,
+        enable_decompilation_support = true,
+        organize_imports_on_format = true,
+        root_dir = lspconfig.util.root_pattern('*.sln'),
+    },
+
+    rust_analyzer = {
+        settings = {
+            cargo = {
+                buildScripts = {
+                    enable = true
+                }
+            }
+        }
     },
 
     sumneko_lua = {
@@ -165,6 +156,18 @@ local servers = {
           },
         },
       },
+    },
+
+    tsserver = {
+        cmd = { 'typescript-language-server', '--stdio' },
+        filetypes = {
+            'javascript',
+            'javascriptreact',
+            'javascript.jsx',
+            'typescript',
+            'typescriptreact',
+            'typescript.tsx',
+        },
     },
 }
 
