@@ -72,6 +72,7 @@ require('packer').startup({
     -- Colors
     use 'norcalli/nvim-colorizer.lua'
     use 'sainnhe/gruvbox-material'
+    use 'lukas-reineke/indent-blankline.nvim'
 
     -- Status line
     use {
