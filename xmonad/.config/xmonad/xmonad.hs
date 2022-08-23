@@ -121,7 +121,7 @@ myStartupHook = do
     -- spawnOnce "lxsession"
     spawn "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144.00 --output HDMI-A-2 --mode 2560x1440 --rate 144.00 --left-of DisplayPort-0"
     spawnOnce "picom"
-    spawnOnce "feh --bg-scale ~/Pictures/wallpapers/landscape-minimal-panaromic.jpg ~/Pictures/wallpapers/west-of-the-sun.jpg"
+    spawnOnce "feh --no-fehbg --bg-scale ~/Pictures/wallpapers/landscape-minimal-panaromic.jpg ~/Pictures/wallpapers/west-of-the-sun.jpg"
     -- spawnOnce "nm-applet"
     -- spawnOnce "volumeicon"
     -- spawnOnce "/usr/bin/emacs --daemon" -- emacs daemon for the emacsclient
@@ -130,8 +130,6 @@ myStartupHook = do
     -- spawn ("sleep 2 && trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 " ++ colorTrayer ++ " --height 22")
 
     -- spawnOnce "xargs xwallpaper --stretch < ~/.cache/wall"
-    spawnOnce "~/.fehbg &"  -- set last saved feh wallpaper
-    -- spawnOnce "feh --randomize --bg-fill ~/wallpapers/*"  -- feh set random wallpaper
     -- spawnOnce "nitrogen --restore &"   -- if you prefer nitrogen to feh
     setWMName "LG3D"
 
