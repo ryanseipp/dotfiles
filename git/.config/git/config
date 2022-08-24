@@ -1,0 +1,41 @@
+[user]
+	email = ryan@seipp.us
+	name = Ryan Seipp
+[init]
+	defaultBranch = master
+
+[push]
+    autoSetupRemote = true
+
+[merge]
+    autoStash = true
+
+[rebase]
+    autoStash = true
+
+[log]
+    abbrevCommit = true
+
+[alias]
+    a = "add"
+    aa = "add ."
+    b = "branch"
+    bd = "branch -d"
+    bD = "branch -D"
+    bl = "branch -l"
+    c = "commit"
+    cm = "commit -m"
+    co = "checkout"
+    cob = "checkout -b"
+    com = "checkout master"
+    d = "diff"
+    ds = "diff --staged"
+    m = "merge"
+    p = "pull -p"
+    rb = "rebase"
+    rba = "rebase --abort"
+    rbc = "rebase --continue"
+    r = "restore"
+    rs = "restore --staged"
+    s = "status"
+    new = "log origin.. --reverse"

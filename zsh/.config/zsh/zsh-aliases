@@ -6,11 +6,8 @@ alias ll='exa -Fhlg --group-directories-first'
 alias la='exa -Fhalg --group-directories-first'
 
 # git
-alias gst='git status'
-alias ga='git add'
-alias gc='git checkout'
-alias gds="git diff --staged"
-alias gp="git pull -p"
+alias g='git'
+alias gbm='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
 
 # docker-compose
 alias dcu='docker-compose up -d --build --remove-orphans'
