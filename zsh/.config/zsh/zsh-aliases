@@ -7,14 +7,18 @@ alias la='exa -Fhalg --group-directories-first'
 
 # git
 alias g='git'
-alias gbm='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
+alias gbm='g br --merged | rg -v "(^\*|master)" | xargs g brd'
+
+# docker
+alias d='docker'
 
 # docker-compose
-alias dcu='docker-compose up -d --build --remove-orphans'
-alias dcul='docker-compose -f docker-compose.local-develop.yml up -d --build'
-alias dcs='docker-compose stop'
-alias dcd='docker-compose down'
-alias dcde='docker-compose down && exit'
+alias dc='docker-compose'
+alias dcu='dc up -d --build --remove-orphans'
+alias dcul='dcu -f docker-compose.local-develop.yml'
+alias dcs='dc stop'
+alias dcd='dc down'
+alias dcde='dc down && exit'
 
 # get fastest mirrors
 alias mirror='sudo reflector -f 30 -l 30 --number 10 -p "https,rsync" -c US --verbose --save /etc/pacman.d/mirrorlist'
