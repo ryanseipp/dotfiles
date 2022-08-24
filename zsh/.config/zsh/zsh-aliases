@@ -1,8 +1,9 @@
 #!/bin/sh
 
 # ls
-alias ll='ls -lh --color=auto'
-alias la='ls -lAh --color=auto'
+alias ls='exa'
+alias ll='exa -Fhlg --group-directories-first'
+alias la='exa -Fhalg --group-directories-first'
 
 # git
 alias gst='git status'
