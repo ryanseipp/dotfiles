@@ -34,7 +34,6 @@ bindkey "^[[B" down-line-or-beginning-search
 autoload -Uz colors && colors
 
 source "$ZDOTDIR/zsh-functions"
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 zsh_add_file "zsh-exports"
 zsh_add_file "zsh-aliases"
@@ -65,4 +64,8 @@ export mmove() {
     done
 }
 
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+export h() {
+    "$@" --help 2>&1 | bat -p -l help
+}
+
+eval "$(starship init zsh)"

@@ -17,6 +17,9 @@ export XMONAD_CONFIG_DIR=$HOME/.config/xmonad/
 export ZDOTDIR=$HOME/.config/zsh
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 
+export BAT_THEME=gruvbox-dark
+export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
+
 export COMPOSE_DOCKER_CLI_BUILD=1
 export DOCKER_BUILDKIT=1
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
