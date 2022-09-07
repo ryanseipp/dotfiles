@@ -5,6 +5,9 @@ alias ls='exa'
 alias ll='exa -Fhlg --group-directories-first'
 alias la='exa -Fhalg --group-directories-first'
 
+# nvim
+alias n='nvim'
+
 # git
 alias g='git'
 alias gbm='g br --merged | rg -v "(^\*|master)" | xargs g brd'
@@ -15,7 +18,7 @@ alias d='docker'
 # docker-compose
 alias dc='docker-compose'
 alias dcu='dc up -d --build --remove-orphans'
-alias dcul='dcu -f docker-compose.local-develop.yml'
+alias dcul='dc -f docker-compose.local-develop.yml up -d --build --remove-orphans'
 alias dcs='dc stop'
 alias dcd='dc down'
 alias dcde='dc down && exit'
