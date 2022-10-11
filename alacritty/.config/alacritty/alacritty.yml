@@ -142,9 +142,7 @@ font:
 colors:
   # Default colors
   primary:
-    # hard contrast: background = '0x1d2021'
     background: '0x1d2021'
-    # soft contrast: background = '0x32302f'
     foreground: '0xebdbb2'
 
   # Normal colors
@@ -168,6 +166,35 @@ colors:
     magenta: '0xd3869b'
     cyan:    '0x8ec07c'
     white:   '0xebdbb2'
+
+# Colors (One Dark Warmer)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#232326'
+#     foreground: '#a7aab0'
+#
+#   # Normal colors
+#   normal:
+#     black:   '#1b1c1e'
+#     red:     '#de5d68'
+#     green:   '#8fb573'
+#     yellow:  '#dbb671'
+#     blue:    '#57a5e5'
+#     magenta: '#bb70d2'
+#     cyan:    '#51a8b3'
+#     white:   '#a7aab0'
+#
+#   # Bright colors
+#   bright:
+#     black:   '#5c6370'
+#     red:     '#de5d68'
+#     green:   '#8fb573'
+#     yellow:  '#dbb671'
+#     blue:    '#57a5e5'
+#     magenta: '#bb70d2'
+#     cyan:    '#51a8b3'
+#     white:   '#ffffff'
 
 # Colors (Tomorrow Night)
 #colors:

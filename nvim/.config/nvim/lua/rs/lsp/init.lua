@@ -31,22 +31,22 @@ local filetype_attach = setmetatable({
 local custom_attach = function(client, bufnr)
     local filetype = vim.api.nvim_buf_get_option(bufnr, 'filetype')
 
-    g.map_buf(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
-    g.map_buf(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
-    g.map_buf(bufnr, 'n', 'gT', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
-    g.map_buf(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
-    g.map_buf(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
-    g.map_buf(bufnr, 'n', '<c-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
-    g.map_buf(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
-    g.map_buf(bufnr, 'n', '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
-    g.map_buf(bufnr, 'n', '[d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-    g.map_buf(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-    g.map_buf(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
+    g.buf_nnoremap(bufnr, 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
+    g.buf_nnoremap(bufnr, 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
+    g.buf_nnoremap(bufnr, 'gT', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
+    g.buf_nnoremap(bufnr, 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
+    g.buf_nnoremap(bufnr, 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
+    g.buf_nnoremap(bufnr, '<c-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
+    g.buf_nnoremap(bufnr, '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
+    g.buf_nnoremap(bufnr, '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
+    g.buf_nnoremap(bufnr, '[d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+    g.buf_nnoremap(bufnr, ']d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+    g.buf_nnoremap(bufnr, '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 
-    g.map_buf(bufnr, 'n', '<leader>rr', '<cmd>LspRestart<CR>')
+    g.buf_nnoremap(bufnr, '<leader>rr', '<cmd>LspRestart<CR>')
 
     -- Set autocommands conditional on server_capabilities
-    if client.resolved_capabilities.document_highlight then
+    if client.server_capabilities.document_highlight then
       vim.cmd [[
         augroup lsp_document_highlight
           autocmd! * <buffer>
@@ -56,7 +56,7 @@ local custom_attach = function(client, bufnr)
       ]]
     end
 
-    if client.resolved_capabilities.code_lens then
+    if client.server_capabilities.code_lens then
       vim.cmd [[
        augroup lsp_document_codelens
           au! * <buffer>

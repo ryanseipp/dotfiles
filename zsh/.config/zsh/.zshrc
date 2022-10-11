@@ -49,16 +49,11 @@ source /usr/share/nvm/install-nvm-exec
 
 export mmove() {
     while :; do
-        if  [ $(xprintidle) -gt 100000 ]
-        then
+        if  [ $(xprintidle) -gt 100000 ]; then
             x=$(rand -M 5120)
             y=$(rand -M 1440)
             xdotool mousemove $x $y;
-            echo "moved mouse to ${x} ${y}"
-        else
-            echo "idle not detected"
         fi
-
 
         sleep 30
     done

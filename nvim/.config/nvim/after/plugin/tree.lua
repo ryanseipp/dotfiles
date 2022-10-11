@@ -1,7 +1,6 @@
 local g = require'rs.globals'
-local tree = require'nvim-tree'
 
-tree.setup {
+require'nvim-tree'.setup {
     update_focused_file = {
         enable = true,
     },
@@ -11,5 +10,5 @@ tree.setup {
     }
 }
 
-g.map('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>')
-g.map('n', '<leader>tr', '<cmd>NvimTreeRefresh<CR>')
+g.nnoremap('<leader>tt', '<cmd>NvimTreeToggle<CR>')
+g.nnoremap('<leader>tr', '<cmd>NvimTreeRefresh<CR>')

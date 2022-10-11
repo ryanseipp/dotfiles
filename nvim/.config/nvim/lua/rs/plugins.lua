@@ -19,6 +19,7 @@ require('packer').startup({
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    use 'nvim-treesitter/nvim-treesitter-textobjects'
     use 'windwp/nvim-ts-autotag'
     use 'windwp/nvim-autopairs'
 
@@ -72,6 +73,7 @@ require('packer').startup({
     -- Colors
     use 'norcalli/nvim-colorizer.lua'
     use 'sainnhe/gruvbox-material'
+    use 'navarasu/onedark.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
 
     -- Status line

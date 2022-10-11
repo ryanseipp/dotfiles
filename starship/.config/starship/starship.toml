@@ -83,21 +83,94 @@ $character"""
 disabled = false
 
 [directory]
+read_only = " "
 truncate_to_repo = true
 fish_style_pwd_dir_length = 1
 
+[git_metrics]
+disabled = false
+
 [git_status]
-conflicted = "${count}="
-ahead = "${count}⇡"
-behind = "${count}⇣"
-diverged = "${count}⇕"
-untracked = "${count}?"
-stashed = "${count}$"
-modified = "${count}!"
-staged = "${count}+"
-renamed = "${count}»"
-deleted = "${count}✘"
+conflicted = "=${count}"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕${count}"
+untracked = "?${count}"
+stashed = "*${count}"
+modified = "!${count}"
+staged = "[+${count}](green)"
+renamed = "»${count}"
+deleted = "✘${count}"
 
 [time]
 disabled = false
 use_12hr = true
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[dotnet]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[rust]
+symbol = " "

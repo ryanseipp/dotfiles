@@ -2,7 +2,7 @@ local g = require'rs.globals'
 
 local map_tele = function(key, f)
     local rhs = string.format("<cmd>lua require('rs.telescope')['%s']()<CR>", f)
-    g.map('n', key, rhs, {noremap = true, silent = true})
+    g.nnoremap(key, rhs, {silent = true})
 end
 
 -- dotfiles
@@ -32,6 +32,7 @@ map_tele('<leader>nb', 'buffers')
 map_tele('<leader>nj', 'jumplist')
 map_tele('<leader>nr', 'registers')
 map_tele('<leader>nc', 'commands')
+map_tele('<leader>ncc', 'colorscheme')
 map_tele('<leader>nh', 'help_tags')
 map_tele('<leader>nk', 'keymaps')
 map_tele('<leader>nac', 'autocommands')

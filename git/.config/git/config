@@ -1,6 +1,7 @@
 [user]
 	email = ryan@seipp.us
 	name = Ryan Seipp
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEifSDO2ov+32tTVkyWhhiDMI0Oh4iH3AizUQHzl38T/ ryan@seipp.us
 [init]
 	defaultBranch = master
 
@@ -32,6 +33,7 @@
     ds = "diff --staged"
     m = "merge"
     new = "log origin.. --reverse"
+    plog = "log --graph --all --decorate --oneline"
     p = "pull -p"
     pu = "push"
     rb = "rebase"
@@ -43,3 +45,5 @@
 
 [help]
     autoCorrect = "immediate"
+[gpg]
+	format = ssh

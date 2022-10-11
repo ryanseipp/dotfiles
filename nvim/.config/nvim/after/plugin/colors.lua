@@ -6,15 +6,12 @@ end
 vim.o.background = 'dark'
 vim.g.gruvbox_material_background = 'hard'
 vim.g.gruvbox_material_ui_contrast = 'high'
-vim.cmd [[colorscheme gruvbox-material]]
 
-
-
--- status line
-require('lualine').setup {
-  options = {
-    theme = 'gruvbox-material'
-  }
+require('onedark').setup {
+    style = 'warmer'
 }
 
-require'colorizer'.setup()
+vim.cmd [[colorscheme gruvbox-material]]
+
+require('lualine').setup()
+require('colorizer').setup()
