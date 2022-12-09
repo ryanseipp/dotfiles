@@ -3,7 +3,7 @@
 	name = Ryan Seipp
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEifSDO2ov+32tTVkyWhhiDMI0Oh4iH3AizUQHzl38T/ ryan@seipp.us
 [init]
-	defaultBranch = master
+	defaultBranch = main
 
 [push]
     autoSetupRemote = true
@@ -47,3 +47,7 @@
     autoCorrect = "immediate"
 [gpg]
 	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /home/zorbik/.ssh/allowed_signers
+[commit]
+	gpgsign = true
