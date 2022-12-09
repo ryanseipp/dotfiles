@@ -1,27 +1,72 @@
-local g = require'rs.globals'
-
 local has_lsp, lspconfig = pcall(require, 'lspconfig')
 if not has_lsp then
-  return
+    return
 end
 
 -- add commands to run when init every langserver
 local custom_init = function(client)
-  client.config.flags = client.config.flags or {}
-  client.config.flags.allow_incremental_sync = true
+    client.config.flags = client.config.flags or {}
+    client.config.flags.allow_incremental_sync = true
+end
+
+local augroup_highlight = vim.api.nvim_create_augroup("custom-lsp-references", { clear = true })
+local augroup_codelens = vim.api.nvim_create_augroup("custom-lsp-codelens", { clear = true })
+local augroup_format = vim.api.nvim_create_augroup("custom-lsp-format", { clear = true })
+local augroup_eslint_fixall = vim.api.nvim_create_augroup("custom-lsp-format", { clear = true })
+
+local autocmd_format = function(async, filter)
+    vim.api.nvim_clear_autocmds { buffer = 0, group = augroup_format }
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup_format,
+        buffer = 0,
+        callback = function()
+            vim.lsp.buf.format { async = async, filter = filter }
+        end
+    })
+end
+
+local autocmd_eslint_fixall = function()
+    vim.api.nvim_clear_autocmds { buffer = 0, group = augroup_eslint_fixall }
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup_eslint_fixall,
+        buffer = 0,
+        callback = function()
+            local clients = vim.lsp.get_active_clients()
+            for _, v in pairs(clients) do
+                if v.name == 'eslint' then
+                    vim.cmd [[ EslintFixAll ]]
+                end
+            end
+        end
+    })
 end
 
 -- add filetype specific commands here
 local filetype_attach = setmetatable({
-    --[[
-    -- go = function(client)
-    --  vim.cmd [[
-    --    augroup lsp_buf_format
-    --      au! BufWritePre <buffer>
-    --    augroup end
-    --  ]]
-    -- end,
-    --]]
+    lua = function()
+        autocmd_format(false)
+    end,
+    rust = function()
+        autocmd_format(false)
+    end,
+    javascript = function()
+        autocmd_eslint_fixall()
+    end,
+    javascriptreact = function()
+        autocmd_eslint_fixall()
+    end,
+    ["javascript.jsx"] = function()
+        autocmd_eslint_fixall()
+    end,
+    typescript = function()
+        autocmd_eslint_fixall()
+    end,
+    typescriptreact = function()
+        autocmd_eslint_fixall()
+    end,
+    ["typescript.ts"] = function()
+        autocmd_eslint_fixall()
+    end,
 }, {
     __index = function()
         return function() end
@@ -31,39 +76,57 @@ local filetype_attach = setmetatable({
 local custom_attach = function(client, bufnr)
     local filetype = vim.api.nvim_buf_get_option(bufnr, 'filetype')
 
-    g.buf_nnoremap(bufnr, 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
-    g.buf_nnoremap(bufnr, 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
-    g.buf_nnoremap(bufnr, 'gT', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
-    g.buf_nnoremap(bufnr, 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
-    g.buf_nnoremap(bufnr, 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
-    g.buf_nnoremap(bufnr, '<c-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
-    g.buf_nnoremap(bufnr, '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
-    g.buf_nnoremap(bufnr, '<leader>rf', '<cmd>lua vim.lsp.buf.formatting()<CR>')
-    g.buf_nnoremap(bufnr, '[d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-    g.buf_nnoremap(bufnr, ']d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-    g.buf_nnoremap(bufnr, '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
+    local mappings = {
+        ['gd'] = vim.lsp.buf.definition,
+        ['gD'] = vim.lsp.buf.declaration,
+        ['gT'] = vim.lsp.buf.type_definition,
+        ['gr'] = vim.lsp.buf.references,
+        ['K'] = vim.lsp.buf.hover,
+        ['<c-k>'] = vim.lsp.buf.signature_help,
+        ['<leader>rn'] = vim.lsp.buf.rename,
+        ['<leader>rf'] = vim.lsp.buf.format,
+        ['[d'] = vim.diagnostic.goto_next,
+        [']d'] = vim.diagnostic.goto_prev,
+        ['<leader>ca'] = vim.lsp.buf.code_action,
+        ['<leader>rr'] = function()
+            vim.cmd [[ LspRestart ]]
+        end,
+    }
 
-    g.buf_nnoremap(bufnr, '<leader>rr', '<cmd>LspRestart<CR>')
-
-    -- Set autocommands conditional on server_capabilities
-    if client.server_capabilities.document_highlight then
-      vim.cmd [[
-        augroup lsp_document_highlight
-          autocmd! * <buffer>
-          autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-          autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-        augroup END
-      ]]
+    for keys, mapping in pairs(mappings) do
+        vim.api.nvim_buf_set_keymap(bufnr, "n", keys, "", { callback = mapping, noremap = true })
     end
 
-    if client.server_capabilities.code_lens then
-      vim.cmd [[
-       augroup lsp_document_codelens
-          au! * <buffer>
-          autocmd BufEnter ++once         <buffer> lua require'vim.lsp.codelens'.refresh()
-          autocmd BufWritePost,CursorHold <buffer> lua require'vim.lsp.codelens'.refresh()
-        augroup END
-      ]]
+    vim.bo.omnifunc = "v:lua.vim.lsp.omnifunc"
+
+    -- Set autocommands conditional on server_capabilities
+    if client.server_capabilities.documentHighlightProvider then
+        vim.api.nvim_clear_autocmds { group = augroup_highlight, buffer = bufnr }
+        vim.api.nvim_create_autocmd("CursorHold", {
+            group = augroup_highlight,
+            callback = vim.lsp.buf.document_highlight,
+            buffer = bufnr
+        })
+        vim.api.nvim_create_autocmd("CursorMoved", {
+            group = augroup_highlight,
+            callback = vim.lsp.buf.clear_references,
+            buffer = bufnr
+        })
+    end
+
+    if client.server_capabilities.codeLensProvider then
+        vim.api.nvim_clear_autocmds { group = augroup_codelens, buffer = bufnr }
+        vim.api.nvim_create_autocmd("BufEnter", {
+            group = augroup_codelens,
+            callback = vim.lsp.codelens.refresh,
+            buffer = bufnr,
+            once = true
+        })
+        vim.api.nvim_create_autocmd({ "BufWritePost", "CursorHold" }, {
+            group = augroup_codelens,
+            callback = vim.lsp.codelens.refresh,
+            buffer = bufnr
+        })
     end
 
     -- Attach any filetype specific options to the client
@@ -72,7 +135,7 @@ end
 
 local updated_capabilities = vim.lsp.protocol.make_client_capabilities()
 updated_capabilities.textDocument.codeLens = { dynamicRegistration = false }
-updated_capabilities = require('cmp_nvim_lsp').update_capabilities(updated_capabilities)
+updated_capabilities = require('cmp_nvim_lsp').default_capabilities(updated_capabilities)
 
 local lua_runtime_path = vim.split(package.path, ';')
 table.insert(lua_runtime_path, 'lua/?.lua')
@@ -81,13 +144,15 @@ table.insert(lua_runtime_path, 'lua/?/init.lua')
 -- define lang server configs
 local servers = {
     ansiblels = (1 == vim.fn.executable 'ansible-language-server'),
+    astro = (1 == vim.fn.executable 'astro-ls'),
     bashls = (1 == vim.fn.executable 'bash-language-server'),
     cmake = (1 == vim.fn.executable 'cmake-language-server'),
     dockerls = (1 == vim.fn.executable 'docker-langserver'),
-    eslint = (1 == vim.fn.executable 'vscode-eslint-language-server'),
     gopls = (1 == vim.fn.executable 'gople'),
     pylsp = (1 == vim.fn.executable 'pylsp'),
     terraformls = (1 == vim.fn.executable 'terraform-ls'),
+    tailwindcss = (1 == vim.fn.executable 'tailwindcss-language-server'),
+    tsserver = (1 == vim.fn.executable 'typescript-language-server'),
     yamlls = (1 == vim.fn.executable 'yaml-language-server'),
 
     clangd = {
@@ -103,6 +168,13 @@ local servers = {
         root_dir = lspconfig.util.root_pattern('*/**/compile_commands.json'),
     },
 
+    eslint = {
+        settings = {
+            packageManager = 'yarn',
+            format = false,
+        },
+    },
+
     hls = {
         root_dir = lspconfig.util.root_pattern('*'),
         settings = {
@@ -114,7 +186,7 @@ local servers = {
     },
 
     omnisharp = {
-        cmd = {'/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid())},
+        cmd = { '/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid()) },
         enable_import_completion = true,
         enable_decompilation_support = true,
         organize_imports_on_format = true,
@@ -132,44 +204,31 @@ local servers = {
     },
 
     sumneko_lua = {
-      cmd = {'/usr/bin/lua-language-server'};
-      settings = {
-        Lua = {
-          runtime = {
-            -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-            version = 'LuaJIT',
-            -- Setup your lua path
-            path = lua_runtime_path,
-          },
-          diagnostics = {
-            -- Get the language server to recognize the `vim` global
-            globals = {'vim', 'awesome', 'client', 'root'},
-          },
-          workspace = {
-            -- Make the server aware of Neovim runtime files
-            library = {
-                ['/usr/share/nvim/runtime/lua'] = true,
-                ['/usr/share/nvim/runtime/lua/vim/lsp'] = true,
-                ['/usr/share/awesome/lib'] = true
+        cmd = { '/usr/bin/lua-language-server' };
+        settings = {
+            Lua = {
+                runtime = {
+                    -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+                    version = 'LuaJIT',
+                    -- Setup your lua path
+                    path = lua_runtime_path,
+                },
+                diagnostics = {
+                    -- Get the language server to recognize the `vim` global
+                    globals = { 'vim', 'awesome', 'client', 'root' },
+                },
+                workspace = {
+                    -- Make the server aware of Neovim runtime files
+                    library = {
+                        ['/usr/share/nvim/runtime/lua'] = true,
+                        ['/usr/share/nvim/runtime/lua/vim/lsp'] = true,
+                        ['/usr/share/awesome/lib'] = true
+                    },
+                },
+                telemetry = {
+                    enable = false,
+                },
             },
-          },
-          -- Do not send telemetry data containing a randomized but unique identifier
-          telemetry = {
-            enable = false,
-          },
-        },
-      },
-    },
-
-    tsserver = {
-        cmd = { 'typescript-language-server', '--stdio' },
-        filetypes = {
-            'javascript',
-            'javascriptreact',
-            'javascript.jsx',
-            'typescript',
-            'typescriptreact',
-            'typescript.tsx',
         },
     },
 }
@@ -198,6 +257,8 @@ end
 for server, config in pairs(servers) do
     setup_server(server, config)
 end
+
+require('rs.lsp.null-ls').setup(custom_attach)
 
 return {
     on_init = custom_init,

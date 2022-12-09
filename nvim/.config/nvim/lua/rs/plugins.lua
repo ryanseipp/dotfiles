@@ -33,6 +33,7 @@ require('packer').startup({
     use 'hrsh7th/cmp-nvim-lua'            -- nvim lua completion
     use 'hrsh7th/cmp-nvim-lsp'            -- completion from lsp
     use 'saadparwaiz1/cmp_luasnip'        -- snippets for cmp
+    use 'jose-elias-alvarez/null-ls.nvim'
 
     -- Debugging
     use 'mfussenegger/nvim-dap'
