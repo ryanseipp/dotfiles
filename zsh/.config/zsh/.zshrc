@@ -47,6 +47,8 @@ source /usr/share/nvm/nvm.sh --no-use
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
+eval $(keychain --eval --quiet id_ed25519)
+
 export mmove() {
     while :; do
         if  [ $(xprintidle) -gt 100000 ]; then
