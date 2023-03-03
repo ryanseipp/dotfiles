@@ -1,8 +1,22 @@
-local g = require'rs.globals'
+local telescope = require 'telescope'
+telescope.setup {
+    extensions = {
+        fzf = {
+            fuzzy = true,
+            override_generic_sorter = true,
+            override_file_sorter = true,
+            case_mode = 'smart_case'
+        },
+    }
+}
+
+telescope.load_extension('fzf')
+
+local g = require 'rs.globals'
 
 local map_tele = function(key, f)
     local rhs = string.format("<cmd>lua require('rs.telescope')['%s']()<CR>", f)
-    g.nnoremap(key, rhs, {silent = true})
+    g.nnoremap(key, rhs, { silent = true })
 end
 
 -- dotfiles

@@ -3,8 +3,10 @@ if not has_lsp then
     return
 end
 
+local M = {}
+
 -- add commands to run when init every langserver
-local custom_init = function(client)
+M.custom_init = function(client)
     client.config.flags = client.config.flags or {}
     client.config.flags.allow_incremental_sync = true
 end
@@ -69,11 +71,12 @@ local filetype_attach = setmetatable({
     end,
 }, {
     __index = function()
-        return function() end
+        return function()
+        end
     end,
 })
 
-local custom_attach = function(client, bufnr)
+M.custom_attach = function(client, bufnr)
     local filetype = vim.api.nvim_buf_get_option(bufnr, 'filetype')
 
     local mappings = {
@@ -137,15 +140,18 @@ local updated_capabilities = vim.lsp.protocol.make_client_capabilities()
 updated_capabilities.textDocument.codeLens = { dynamicRegistration = false }
 updated_capabilities = require('cmp_nvim_lsp').default_capabilities(updated_capabilities)
 
+M.capabilities = updated_capabilities
+
 local lua_runtime_path = vim.split(package.path, ';')
 table.insert(lua_runtime_path, 'lua/?.lua')
 table.insert(lua_runtime_path, 'lua/?/init.lua')
 
 -- define lang server configs
-local servers = {
+M.servers = {
     ansiblels = (1 == vim.fn.executable 'ansible-language-server'),
-    astro = (1 == vim.fn.executable 'astro-ls'),
+    astro = true,
     bashls = (1 == vim.fn.executable 'bash-language-server'),
+    bufls = (1 == vim.fn.executable 'bufls'),
     cmake = (1 == vim.fn.executable 'cmake-language-server'),
     dockerls = (1 == vim.fn.executable 'docker-langserver'),
     gopls = (1 == vim.fn.executable 'gople'),
@@ -154,7 +160,6 @@ local servers = {
     tailwindcss = (1 == vim.fn.executable 'tailwindcss-language-server'),
     tsserver = (1 == vim.fn.executable 'typescript-language-server'),
     yamlls = (1 == vim.fn.executable 'yaml-language-server'),
-
     clangd = {
         cmd = {
             'clangd',
@@ -165,18 +170,16 @@ local servers = {
         init_options = {
             clangdFileStatus = true,
         },
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
         root_dir = lspconfig.util.root_pattern('*/**/compile_commands.json'),
     },
-
     eslint = {
         settings = {
             packageManager = 'yarn',
             format = false,
         },
     },
-
     hls = {
-        root_dir = lspconfig.util.root_pattern('*'),
         settings = {
             haskell = {
                 hlintOn = true,
@@ -184,27 +187,32 @@ local servers = {
             }
         }
     },
-
     omnisharp = {
         cmd = { '/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid()) },
-        enable_import_completion = true,
-        enable_decompilation_support = true,
+        enable_editorconfig_support = true,
         organize_imports_on_format = true,
         root_dir = lspconfig.util.root_pattern('*.sln'),
     },
+    -- csharp_ls = {
+    --     root_dir = lspconfig.util.root_pattern('*.sln'),
+    -- },
 
     rust_analyzer = {
         settings = {
-            cargo = {
-                buildScripts = {
-                    enable = true
+            ["rust-analyzer"] = {
+                cargo = {
+                    buildScripts = {
+                        enable = true
+                    }
+                },
+                checkOnSave = {
+                    command = "clippy"
                 }
             }
         }
     },
-
-    sumneko_lua = {
-        cmd = { '/usr/bin/lua-language-server' };
+    lua_ls = {
+        cmd = { '/usr/bin/lua-language-server' },
         settings = {
             Lua = {
                 runtime = {
@@ -233,35 +241,4 @@ local servers = {
     },
 }
 
-local setup_server = function(server, config)
-    if not config then
-        return
-    end
-
-    if type(config) ~= 'table' then
-        config = {}
-    end
-
-    config = vim.tbl_deep_extend('force', {
-        on_init = custom_init,
-        on_attach = custom_attach,
-        capabilities = updated_capabilities,
-        flags = {
-            debounce_text_changes = 50,
-        },
-    }, config)
-
-    lspconfig[server].setup(config)
-end
-
-for server, config in pairs(servers) do
-    setup_server(server, config)
-end
-
-require('rs.lsp.null-ls').setup(custom_attach)
-
-return {
-    on_init = custom_init,
-    on_attach = custom_attach,
-    capabilities = updated_capabilities,
-}
+return M
