@@ -119,7 +119,7 @@ myStartupHook = do
     -- spawn "killall trayer"  -- kill current trayer on each restart
 
     -- spawnOnce "lxsession"
-    spawn "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144.00 --output HDMI-A-2 --mode 2560x1440 --rate 144.00 --left-of DisplayPort-0"
+    spawn "xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144.00 --output HDMI-A-1 --mode 2560x1440 --rate 144.00 --left-of DisplayPort-0"
     spawnOnce "picom"
     spawnOnce "feh --no-fehbg --bg-scale ~/Pictures/wallpapers/landscape-minimal-panaromic.jpg ~/Pictures/wallpapers/west-of-the-sun.jpg"
     -- spawnOnce "nm-applet"
