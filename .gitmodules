@@ -1,0 +1,3 @@
+[submodule "zmk/.config/Adv360-Pro-ZMK"]
+	path = zmk/.config/Adv360-Pro-ZMK
+	url = https://github.com/ryanseipp/Adv360-Pro-ZMK
