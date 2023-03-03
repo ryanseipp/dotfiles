@@ -48,6 +48,7 @@ source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
 eval $(keychain --eval --quiet id_ed25519)
+eval $(keychain --eval --quiet rseipp_id_ed25519)
 
 export mmove() {
     while :; do
