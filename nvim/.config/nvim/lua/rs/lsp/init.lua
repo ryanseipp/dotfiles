@@ -179,14 +179,6 @@ M.servers = {
             format = false,
         },
     },
-    hls = {
-        settings = {
-            haskell = {
-                hlintOn = true,
-                formattingProvider = "stylish-haskell"
-            }
-        }
-    },
     omnisharp = {
         cmd = { '/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid()) },
         enable_editorconfig_support = true,
