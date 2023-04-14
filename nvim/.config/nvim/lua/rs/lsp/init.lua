@@ -148,18 +148,18 @@ table.insert(lua_runtime_path, 'lua/?/init.lua')
 
 -- define lang server configs
 M.servers = {
-    ansiblels = (1 == vim.fn.executable 'ansible-language-server'),
+    ansiblels = true,
     astro = true,
-    bashls = (1 == vim.fn.executable 'bash-language-server'),
-    bufls = (1 == vim.fn.executable 'bufls'),
-    cmake = (1 == vim.fn.executable 'cmake-language-server'),
-    dockerls = (1 == vim.fn.executable 'docker-langserver'),
-    gopls = (1 == vim.fn.executable 'gople'),
-    pylsp = (1 == vim.fn.executable 'pylsp'),
-    terraformls = (1 == vim.fn.executable 'terraform-ls'),
-    tailwindcss = (1 == vim.fn.executable 'tailwindcss-language-server'),
-    tsserver = (1 == vim.fn.executable 'typescript-language-server'),
-    yamlls = (1 == vim.fn.executable 'yaml-language-server'),
+    bashls = true,
+    bufls = true,
+    cmake = true,
+    dockerls = true,
+    gopls = true,
+    pylsp = true,
+    terraformls = true,
+    tailwindcss = true,
+    tsserver = true,
+    yamlls = true,
     clangd = {
         cmd = {
             'clangd',
@@ -175,7 +175,7 @@ M.servers = {
     },
     eslint = {
         settings = {
-            packageManager = 'yarn',
+            packageManager = 'pnpm',
             format = false,
         },
     },
@@ -204,7 +204,6 @@ M.servers = {
         }
     },
     lua_ls = {
-        cmd = { '/usr/bin/lua-language-server' },
         settings = {
             Lua = {
                 runtime = {
