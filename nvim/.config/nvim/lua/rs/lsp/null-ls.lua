@@ -11,6 +11,7 @@ M.setup = function(on_attach)
                 extra_filetypes = { "astro" },
             }),
             null_ls.builtins.formatting.csharpier,
+            null_ls.builtins.formatting.sqlformat,
         },
         on_attach = on_attach,
         debug = true,
