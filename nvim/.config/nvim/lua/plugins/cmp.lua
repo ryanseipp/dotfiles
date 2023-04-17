@@ -8,11 +8,9 @@ return {
         'hrsh7th/cmp-path',
         'L3MON4D3/LuaSnip',
         'saadparwaiz1/cmp_luasnip',
-        'onsails/lspkind-nvim',
     },
     opts = function()
         local cmp = require('cmp')
-        local lspkind = require('lspkind')
         return {
             mapping = {
                 ["<C-n>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
@@ -38,23 +36,9 @@ return {
                     require('luasnip').lsp_expand(args.body)
                 end,
             },
-            formatting = {
-                format = lspkind.cmp_format {
-                    with_text = true,
-                    menu = {
-                        buffer = '[BUF]',
-                        nvim_lsp = '[LSP]',
-                        nvim_lua = '[LUA]',
-                        path = '[path]',
-                    }
-                },
-            },
             experimental = {
                 native_menu = false,
             },
         }
-    end,
-    init = function()
-        require('lspkind').init()
     end,
 }
