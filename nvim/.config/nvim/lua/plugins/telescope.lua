@@ -101,9 +101,13 @@ return {
         { '<leader>nac', "<cmd>lua require('rs.telescope')['autocommands']()<cr>", desc = 'autocommands', silent = true },
     },
     dependencies = {
-        'nvim-lua/plenary.nvim',
-        'nvim-telescope/telescope-dap.nvim',
-        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+        {
+            'nvim-telescope/telescope-fzf-native.nvim',
+            build = 'make',
+            config = function()
+                require('telescope').load_extension('fzf')
+            end,
+        },
     },
     opts = {
         extensions = {
@@ -115,7 +119,4 @@ return {
             },
         },
     },
-    config = function(telescope)
-        telescope.load_extension('fzf')
-    end
 }
