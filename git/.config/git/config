@@ -1,7 +1,6 @@
 [user]
-	email = rseipp@ryanseipp.com
+	email = rseipp@truefit.io
 	name = Ryan Seipp
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICCycJpF3hp+BKw88FYMAfjhEtqC/1TkWqZjK1SScIVb rseipp@ryanseipp.com
 [init]
 	defaultBranch = main
 
@@ -45,9 +44,3 @@
 
 [help]
     autoCorrect = "immediate"
-[gpg]
-	format = ssh
-[gpg "ssh"]
-	allowedSignersFile = /home/zorbik/.ssh/allowed_signers
-[commit]
-	gpgsign = true
