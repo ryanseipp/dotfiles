@@ -257,7 +257,7 @@ M.servers = {
         },
     },
     omnisharp = {
-        cmd = { '/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid()) },
+        cmd = {'/Users/ryanseipp/.local/share/nvim/mason/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid())},
         enable_editorconfig_support = true,
         enable_import_completion = true,
         enable_decompilation_support = true,
