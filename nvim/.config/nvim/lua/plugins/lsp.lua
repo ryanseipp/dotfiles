@@ -4,12 +4,16 @@ return {
         event = { "BufReadPre", "BufNewFile" },
         dependencies = {
             'j-hui/fidget.nvim',
-            'mason.nvim',
+            { 'williamboman/mason.nvim', cmd = 'Mason', config = true },
             'williamboman/mason-lspconfig.nvim',
         },
         config = function()
             local lspconfig = require('lspconfig')
             local lsp = require('rs.lsp')
+
+            require('mason-lspconfig').setup({
+                ensure_installed = vim.tbl_keys(lsp.servers)
+            })
 
             local setup_server = function(server, config)
                 if not config then
@@ -53,10 +57,5 @@ return {
                 null_ls.builtins.formatting.sqlformat,
             }
         end
-    },
-    {
-        'williamboman/mason.nvim',
-        cmd = 'Mason',
-        config = true
     },
 }

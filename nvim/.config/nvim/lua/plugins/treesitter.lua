@@ -1,16 +1,16 @@
 return {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    event = { "BufReadPost", "BufNewFile" },
     dependencies = {
         'nvim-treesitter/nvim-treesitter-textobjects',
         'nvim-treesitter/nvim-treesitter-context',
     },
-    opts = {
+    config = function()
+        require('nvim-treesitter.configs').setup({
         ensure_installed = {
-            "astro", "bash", "c", "c_sharp", "cmake", "comment", "cpp", "css", "dockerfile", "go", "haskell", "help",
-            "hcl", "html", "java", "javascript", "json", "kotlin", "llvm", "lua", "make", "markdown", "ninja", "nix",
-            "proto", "python", "regex", "rust", "scss", "svelte", "sql", "toml", "tsx", "typescript", "vim", "yaml"
+            "astro", "bash", "c", "c_sharp", "cmake", "comment", "cpp", "css", "dockerfile", "go", "haskell", "hcl",
+            "html", "java", "javascript", "json", "kotlin", "llvm", "lua", "make", "markdown", "ninja", "nix", "proto",
+            "python", "regex", "rust", "scss", "svelte", "sql", "toml", "tsx", "typescript", "vim", "yaml"
         },
         context_commentstring = { enable = true },
         highlight = {
@@ -76,5 +76,6 @@ return {
                 },
             },
         },
-    }
+    })
+end
 }

@@ -2,7 +2,7 @@ return {
     {
         'windwp/nvim-autopairs',
         event = { "BufReadPre", "BufNewFile" },
-        config = {
+        opts = {
             check_ts = true,
         }
     },
