@@ -4,7 +4,8 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term alacritty
+set $term kitty
+set $term2 alacritty
 set $browser firefox
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
@@ -57,6 +58,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 bindsym $mod+b exec $browser
 bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $term2
 
 bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy -t image/png
 

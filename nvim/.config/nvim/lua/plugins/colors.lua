@@ -4,10 +4,27 @@ return {
         lazy = false,
         priority = 1000,
         opts = {
-            style = 'night',
+            style = 'moon',
         },
         config = function()
-            vim.cmd([[colorscheme tokyonight-night]])
+            -- vim.cmd.colorscheme('tokyonight-moon')
+        end,
+    },
+    {
+        'rebelot/kanagawa.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            vim.cmd.colorscheme('kanagawa')
+        end,
+    },
+    {
+        'ellisonleao/gruvbox.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            -- vim.o.background = 'dark'
+            -- vim.cmd.colorscheme('gruvbox')
         end,
     },
     {
@@ -15,7 +32,7 @@ return {
         event = "VeryLazy",
         opts = {
             options = {
-                theme = 'tokyonight'
+                theme = 'kanagawa'
             }
         }
     },
