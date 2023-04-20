@@ -98,19 +98,19 @@ scrolling:
 
 font:
   normal:
-    family: 'SauceCodePro Nerd Font'
+    family: 'Iosevka Nerd Font'
     style: Regular
 
   bold:
-    family: 'SauceCodePro Nerd Font'
+    family: 'Iosevka Nerd Font'
     style: Bold
 
   italic:
-    family: 'SauceCodePro Nerd Font'
+    family: 'Iosevka Nerd Font'
     style: Italic
 
   bold_italic:
-    family: 'SauceCodePro Nerd Font'
+    family: 'Iosevka Nerd Font'
     style: Bold Italic
 
   size: 10.0
