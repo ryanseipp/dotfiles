@@ -48,8 +48,8 @@ source /usr/local/opt/nvm/nvm.sh --no-use
 source /usr/local/opt/nvm/etc/bash_completion.d/nvm
 # source /usr/local/opt/nvm/etc/install-nvm-exec
 
-eval $(keychain --eval --quiet id_ed25519)
-eval $(keychain --eval --quiet rseipp_id_ed25519)
+# eval $(keychain --eval --quiet id_ed25519)
+# eval $(keychain --eval --quiet rseipp_id_ed25519)
 
 export mmove() {
     while :; do
