@@ -3,9 +3,9 @@ return {
         'neovim/nvim-lspconfig',
         event = { "BufReadPre", "BufNewFile" },
         dependencies = {
-            { 'j-hui/fidget.nvim',       config = true },
-            { 'williamboman/mason.nvim', cmd = 'Mason', config = true },
-            'williamboman/mason-lspconfig.nvim',
+            { 'j-hui/fidget.nvim',                 config = true },
+            { 'williamboman/mason.nvim',           cmd = 'Mason', config = true },
+            { 'williamboman/mason-lspconfig.nvim', config = true },
         },
         config = function()
             local lspconfig = require('lspconfig')

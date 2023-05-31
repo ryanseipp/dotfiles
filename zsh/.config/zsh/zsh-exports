@@ -43,4 +43,4 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 export GOPATH="$XDG_DATA_HOME"/go
 
-export PATH=$HOME/.local/bin:$HOME/.ghcup/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.local/share/cargo/bin:$HOME/.ghcup/bin:$GOPATH/bin:$PATH
