@@ -42,10 +42,12 @@ zsh_add_file ".zshenv"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.local/share/nvm"
-source /usr/local/opt/nvm/nvm.sh --no-use
+eval "$(fnm env)"
 
-source /usr/local/opt/nvm/etc/bash_completion.d/nvm
+# [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.local/share/nvm"
+# source /usr/local/opt/nvm/nvm.sh --no-use
+#
+# source /usr/local/opt/nvm/etc/bash_completion.d/nvm
 # source /usr/local/opt/nvm/etc/install-nvm-exec
 
 # eval $(keychain --eval --quiet id_ed25519)
