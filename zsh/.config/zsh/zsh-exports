@@ -19,8 +19,11 @@ export WLR_DRM_DEVICES=/dev/dri/card0
 export ZDOTDIR=$HOME/.config/zsh
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 
-export BAT_THEME=gruvbox-dark
+export BAT_THEME=OneHalfDark
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
 
 export COMPOSE_DOCKER_CLI_BUILD=1
 export DOCKER_BUILDKIT=1

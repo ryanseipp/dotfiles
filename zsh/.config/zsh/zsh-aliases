@@ -42,3 +42,6 @@ alias free='free -m'
 # XDG stuff
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME"/wget-hsts'
+
+# note taking
+alias note='nvim ~/Documents/Notes/$(date +%Y-%m-%d).md'

@@ -47,6 +47,8 @@ source /usr/share/nvm/nvm.sh --no-use
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
+[[ ! -r /home/zorbik/.opam/opam-init/init.zsh ]] || source /home/zorbik/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 eval $(keychain --eval --quiet id_ed25519)
 eval $(keychain --eval --quiet rseipp_id_ed25519)
 
