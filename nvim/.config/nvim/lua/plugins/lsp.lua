@@ -3,7 +3,7 @@ return {
         'neovim/nvim-lspconfig',
         event = { "BufReadPre", "BufNewFile" },
         dependencies = {
-            { 'j-hui/fidget.nvim',                 config = true },
+            { 'j-hui/fidget.nvim',                 config = true, tag = 'legacy' },
             { 'williamboman/mason.nvim',           cmd = 'Mason', config = true },
             { 'williamboman/mason-lspconfig.nvim', config = true },
         },
@@ -55,6 +55,10 @@ return {
                 }),
                 null_ls.builtins.formatting.csharpier,
                 null_ls.builtins.formatting.sqlformat,
+                null_ls.builtins.formatting.ocamlformat,
+                null_ls.builtins.formatting.clang_format.with({
+                    filetypes = { "c" }
+                })
             }
         end
     },

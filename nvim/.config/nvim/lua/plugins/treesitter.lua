@@ -10,8 +10,8 @@ return {
             ensure_installed = {
                 "astro", "bash", "c", "c_sharp", "cmake", "comment", "cpp", "css", "dockerfile", "go", "haskell", "hcl",
                 "html", "java", "javascript", "json", "kotlin", "llvm", "lua", "make", "markdown", "markdown_inline",
-                "ninja", "nix", "proto", "python", "regex", "rust", "scss", "svelte", "sql", "toml", "tsx", "typescript",
-                "vim", "yaml"
+                "ninja", "nix", "ocaml", "proto", "python", "regex", "rust", "scss", "svelte", "sql", "toml", "tsx",
+                "typescript", "vim", "yaml"
             },
             context_commentstring = { enable = true },
             highlight = {

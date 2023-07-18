@@ -82,6 +82,7 @@ return {
                 args = {},
                 runInTerminal = false,
             } }
+            dap.configurations.c = dap.configurations.rust
 
             --
             -- dap.configurations.cpp = {

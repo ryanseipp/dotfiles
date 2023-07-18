@@ -51,6 +51,9 @@ local filetype_attach = setmetatable({
     rust = function()
         autocmd_format(false)
     end,
+    ocaml = function()
+        autocmd_format(false)
+    end,
     javascript = function()
         autocmd_eslint_fixall()
     end,
@@ -232,22 +235,20 @@ M.servers = {
     cmake = true,
     dockerls = true,
     -- gopls = true,
+    ocamllsp = true,
     pylsp = true,
     terraformls = true,
     tailwindcss = true,
     tsserver = true,
+    zls = true,
     clangd = {
         cmd = {
             'clangd',
-            '--background-index',
-            '--clang-tidy',
-            '--header-insertion=iwyu',
+            '--offset-encoding=utf-16'
         },
         init_options = {
             clangdFileStatus = true,
         },
-        filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
-        root_dir = lspconfig.util.root_pattern('*/**/compile_commands.json'),
     },
     eslint = {
         settings = {
