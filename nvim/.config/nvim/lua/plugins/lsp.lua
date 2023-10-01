@@ -1,65 +1,36 @@
 return {
-    {
-        'neovim/nvim-lspconfig',
-        event = { "BufReadPre", "BufNewFile" },
-        dependencies = {
-            { 'j-hui/fidget.nvim',                 config = true, tag = 'legacy' },
-            { 'williamboman/mason.nvim',           cmd = 'Mason', config = true },
-            { 'williamboman/mason-lspconfig.nvim', config = true },
-        },
-        config = function()
-            local lspconfig = require('lspconfig')
-            local lsp = require('rs.lsp')
+    'neovim/nvim-lspconfig',
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+        { 'j-hui/fidget.nvim', config = true, tag = 'legacy' },
+    },
+    config = function()
+        local lspconfig = require('lspconfig')
+        local lsp = require('rs.lsp')
 
-            require('mason-lspconfig').setup({
-                ensure_installed = vim.tbl_keys(lsp.servers)
-            })
-
-            local setup_server = function(server, config)
-                if not config then
-                    return
-                end
-
-                if type(config) ~= 'table' then
-                    config = {}
-                end
-
-                config = vim.tbl_deep_extend('force', {
-                    on_init = lsp.custom_init,
-                    on_attach = lsp.custom_attach,
-                    capabilities = lsp.capabilities,
-                    flags = {
-                        debounce_text_changes = 50,
-                    },
-                }, config)
-
-                lspconfig[server].setup(config)
+        local setup_server = function(server, config)
+            if not config then
+                return
             end
 
-            for server, config in pairs(lsp.servers) do
-                setup_server(server, config)
+            if type(config) ~= 'table' then
+                config = {}
             end
+
+            config = vim.tbl_deep_extend('force', {
+                on_init = lsp.custom_init,
+                on_attach = lsp.custom_attach,
+                capabilities = lsp.capabilities,
+                flags = {
+                    debounce_text_changes = 50,
+                },
+            }, config)
+
+            lspconfig[server].setup(config)
         end
-    },
-    {
-        'jose-elias-alvarez/null-ls.nvim',
-        event = { "BufReadPre", "BufNewFile" },
-        dependencies = {
-            'mason.nvim',
-        },
-        opts = function(_, opts)
-            local null_ls = require('null-ls')
-            opts.sources = {
-                null_ls.builtins.formatting.prettier.with({
-                    extra_filetypes = { "astro" },
-                }),
-                null_ls.builtins.formatting.csharpier,
-                null_ls.builtins.formatting.sqlformat,
-                null_ls.builtins.formatting.ocamlformat,
-                null_ls.builtins.formatting.clang_format.with({
-                    filetypes = { "c" }
-                })
-            }
+
+        for server, config in pairs(lsp.servers) do
+            setup_server(server, config)
         end
-    },
+    end
 }
