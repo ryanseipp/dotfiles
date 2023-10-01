@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # ls
-alias ls='exa'
-alias ll='exa -Fhlg --group-directories-first'
-alias la='exa -Fhalg --group-directories-first'
+alias ls='eza'
+alias ll='eza -@Fhlg --git --git-repos --group-directories-first'
+alias la='eza -@Fhalg --git --git-repos --group-directories-first'
 
 # nvim
 alias n='nvim'
