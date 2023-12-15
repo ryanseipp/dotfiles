@@ -1,11 +1,6 @@
 return {
     "stevearc/conform.nvim",
     event = { "BufReadPre", "BufNewFile" },
-    opts = {
-        formatters_by_ft = {
-            javascript = { "prettier" },
-        }
-    },
     keys = {
         {
             "<leader>rf",
@@ -21,16 +16,22 @@ return {
     },
     config = function()
         local conform = require('conform')
-        local prettier_fts = vim.tbl_map(function() return { "prettier" } end,
-            { "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte", "css", "html", "json", "yaml",
-                "markdown", "astro" });
+        local prettier_fts = { "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte", "css", "html",
+            "json", "yaml", "markdown" }
+
+        local formatters_by_ft = {
+            c = { "clang_format" },
+            cs = { "csharpier" },
+            lua = { "stylua" },
+            ocaml = { "ocamlformat" },
+        }
+
+        for _, value in ipairs(prettier_fts) do
+            formatters_by_ft[value] = { "prettier" }
+        end
 
         conform.setup({
-            formatters_by_ft = vim.tbl_extend("force", prettier_fts, {
-                c = { "clang_format" },
-                lua = { "stylua" },
-                ocaml = { "ocamlformat" },
-            }),
+            formatters_by_ft = formatters_by_ft,
             format_on_save = {
                 lsp_fallback = true,
                 async = false,

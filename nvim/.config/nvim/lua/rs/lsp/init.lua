@@ -13,7 +13,19 @@ end
 
 local augroup_highlight = vim.api.nvim_create_augroup("custom-lsp-references", { clear = true })
 local augroup_codelens = vim.api.nvim_create_augroup("custom-lsp-codelens", { clear = true })
+local augroup_format = vim.api.nvim_create_augroup("custom-lsp-format", { clear = true })
 local augroup_eslint_fixall = vim.api.nvim_create_augroup("custom-lsp-format", { clear = true })
+
+local autocmd_format = function(async, filter)
+    vim.api.nvim_clear_autocmds { buffer = 0, group = augroup_format }
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup_format,
+        buffer = 0,
+        callback = function()
+            vim.lsp.buf.format { async = async, filter = filter }
+        end
+    })
+end
 
 local autocmd_eslint_fixall = function()
     vim.api.nvim_clear_autocmds { buffer = 0, group = augroup_eslint_fixall }
@@ -33,6 +45,11 @@ end
 
 -- add filetype specific commands here
 local filetype_attach = setmetatable({
+    csharp = function()
+        autocmd_format(false, function(formatClient)
+            return formatClient.name ~= "omnisharp"
+        end)
+    end,
     javascript = function()
         autocmd_eslint_fixall()
     end,
@@ -212,7 +229,7 @@ M.servers = {
     -- bufls = true,
     cmake = true,
     dockerls = true,
-    -- gopls = true,
+    gopls = true,
     ocamllsp = true,
     pylsp = true,
     terraformls = true,
@@ -234,7 +251,10 @@ M.servers = {
             format = false,
         },
     },
-    -- omnisharp = true,
+    omnisharp = {
+        enable_editorconfig_support = false,
+        enable_import_completion = true,
+    },
     -- omnisharp = {
     --     -- cmd = { '/usr/bin/omnisharp', '-lsp', '--hostPID', tostring(vim.fn.getpid()) },
     --     enable_editorconfig_support = true,
@@ -243,9 +263,9 @@ M.servers = {
     --     organize_imports_on_format = true,
     --     root_dir = lspconfig.util.root_pattern('*.sln'),
     -- },
-    csharp_ls = {
-        -- root_dir = lspconfig.util.root_pattern('*.sln'),
-    },
+    -- csharp_ls = {
+    -- root_dir = lspconfig.util.root_pattern('*.sln'),
+    -- },
 
     rust_analyzer = {
         settings = {

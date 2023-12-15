@@ -12,6 +12,13 @@ setopt hist_ignore_space
 setopt hist_verify
 setopt share_history
 
+source "$ZDOTDIR/zsh-functions"
+
+zsh_add_file "zsh-exports"
+zsh_add_file "zsh-aliases"
+
+fpath=($XDG_CONFIG_HOME/zsh/completions/ $fpath)
+
 autoload -U +X bashcompinit && bashcompinit
 autoload -U +X compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
@@ -33,39 +40,13 @@ bindkey "^[[B" down-line-or-beginning-search
 
 autoload -Uz colors && colors
 
-source "$ZDOTDIR/zsh-functions"
-
-zsh_add_file "zsh-exports"
-zsh_add_file "zsh-aliases"
-
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
-
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.local/share/nvm"
-source /usr/share/nvm/nvm.sh --no-use
-
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
 
 [[ ! -r /home/zorbik/.opam/opam-init/init.zsh ]] || source /home/zorbik/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 eval $(keychain --eval --quiet id_ed25519)
 eval $(keychain --eval --quiet rseipp_id_ed25519)
 
-export mmove() {
-    while :; do
-        if  [ $(xprintidle) -gt 100000 ]; then
-            x=$(rand -M 5120)
-            y=$(rand -M 1440)
-            xdotool mousemove $x $y;
-        fi
-
-        sleep 30
-    done
-}
-
-export h() {
-    "$@" --help 2>&1 | bat -p -l help
-}
-
+eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"

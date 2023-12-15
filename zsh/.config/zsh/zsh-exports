@@ -11,11 +11,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
-export XDG_CURRENT_DESKTOP=sway
+# export XDG_CURRENT_DESKTOP=sway
 # export XDG_RUNTIME_DIR=$HOME/.run
 
 export XMONAD_CONFIG_DIR=$HOME/.config/xmonad/
-export WLR_DRM_DEVICES=/dev/dri/card0
+# export WLR_DRM_DEVICES=/dev/dri/card0
 
 export ZDOTDIR=$HOME/.config/zsh
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
@@ -32,7 +32,6 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 
 export NUGET_PACKAGES="$XDG_CONFIG_HOME"/NuGetPackages
 export WGETRC="$XDG_CONFIG_HOME"/wgetrc
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export KODI_DATA="$XDG_DATA_HOME"/kodi
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
