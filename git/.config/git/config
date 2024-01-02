@@ -44,3 +44,6 @@
 
 [help]
     autoCorrect = "immediate"
+
+[diff]
+    tool = nvimdiff
