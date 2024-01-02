@@ -273,18 +273,15 @@ M.servers = {
             format = false,
         },
     },
-    -- omnisharp = {
-    --     cmd = { '/Users/ryanseipp/.local/share/nvim/mason/bin/omnisharp' },
-    --     enable_editorconfig_support = true,
-    --     enable_import_completion = true,
-    --     enable_decompilation_support = true,
-    --     enable_default_content_items = false,
-    --     organize_imports_on_format = true,
-    --     root_dir = lspconfig.util.root_pattern('*.sln'),
-    -- },
-    csharp_ls = {
+    omnisharp = {
+        enable_editorconfig_support = true,
+        enable_import_completion = true,
+        organize_imports_on_format = true,
         root_dir = lspconfig.util.root_pattern('*.sln'),
     },
+    -- csharp_ls = {
+    --   root_dir = lspconfig.util.root_pattern('*.sln'),
+    -- },
 
     rust_analyzer = {
         settings = {
