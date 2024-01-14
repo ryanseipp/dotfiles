@@ -5,7 +5,7 @@ return {
         event = { "BufReadPre", "BufNewFile" },
         dependencies = {
             { 'j-hui/fidget.nvim', opts = {} },
-            { 'folke/neodev.nvim' },
+            { 'folke/neodev.nvim', opts = {} },
             {
                 'williamboman/mason-lspconfig.nvim',
                 dependencies = { 'williamboman/mason.nvim' },
