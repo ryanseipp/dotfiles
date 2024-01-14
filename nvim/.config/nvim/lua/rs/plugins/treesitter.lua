@@ -13,6 +13,10 @@ return {
                 "ninja", "nix", "ocaml", "proto", "python", "regex", "rust", "scss", "svelte", "sql", "toml", "tsx",
                 "typescript", "vim", "yaml"
             },
+            sync_install = false,
+            auto_install = true,
+            ignore_install = {},
+            modules = {},
             context_commentstring = { enable = true },
             highlight = {
                 enable = true,
