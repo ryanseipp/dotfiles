@@ -8,7 +8,7 @@ return {
             { 'folke/neodev.nvim', opts = {} },
             {
                 'williamboman/mason-lspconfig.nvim',
-                dependencies = { 'williamboman/mason.nvim' },
+                dependencies = { 'williamboman/mason.nvim', opts = {} },
                 opts = { automatic_installation = true, ensure_installed = { 'rust_analyzer' } },
             },
         },

@@ -91,6 +91,13 @@ local filetype_attach = setmetatable({
             end },
         })
     end,
+    go = function(_, bufnr)
+        buf_set_keymaps(bufnr, {
+            { '<leader>dt', "[DAP] Debug test under cursor", function()
+                require('dap-go').debug_test()
+            end },
+        })
+    end
 }, {
     __index = function()
         return function()

@@ -21,27 +21,37 @@ return {
         event = 'VimEnter',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = true,
+        init = function()
+            vim.api.nvim_set_hl(0, 'DashboardProjectTitle', { link = 'DashboardCenter' })
+            vim.api.nvim_set_hl(0, 'DashboardProjectTitleIcon', { link = 'DashboardIcon' })
+            vim.api.nvim_set_hl(0, 'DashboardProjectIcon', { link = 'DashboardIcon' })
+            vim.api.nvim_set_hl(0, 'DashboardMruTitle', { link = 'DashboardCenter' })
+            vim.api.nvim_set_hl(0, 'DashboardMruIcon', { link = 'DashboardIcon' })
+            vim.api.nvim_set_hl(0, 'DashboardFiles', { link = 'DashboardKey' })
+        end,
         opts = {
             theme = 'hyper',
             config = {
                 week_header = {
                     enable = true,
                 },
-                project = {
-                    -- enable = false
-                },
                 shortcut = {
-                    { desc = ' Lazy', group = 'Label', action = 'Lazy', key = 'l', },
-                    { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+                    { desc = ' Lazy', group = 'Function', action = 'Lazy', key = 'l', },
+                    { desc = ' Mason', group = 'Label', action = 'Lazy', key = 'm', },
+                    { desc = '󰊳 Update', group = 'DiagnosticHint', action = 'Lazy update', key = 'u' },
                     {
                         icon = ' ',
                         icon_hl = '@variable',
                         desc = 'Files',
-                        group = 'Label',
+                        group = 'Number',
                         action = 'Telescope find_files',
                         key = 'f',
                     },
                 },
+                footer = {
+                    '',
+                    '  Sharp tools make good work.'
+                }
             },
         }
     },
