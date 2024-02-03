@@ -109,14 +109,13 @@ local filetype_attach = setmetatable({
 --- @param bufnr integer
 M.custom_attach = function(client, bufnr)
     local filetype = vim.api.nvim_get_option_value('filetype', { buf = bufnr })
-    local tscope = require('rs.telescope')
 
     buf_set_keymaps(bufnr, {
         { 'gd',         "[LSP] Go to definition",          vim.lsp.buf.definition },
         { 'gD',         "[LSP] Go to declaration",         vim.lsp.buf.declaration },
         { 'gT',         "[LSP] Go to type definition",     vim.lsp.buf.type_definition },
-        { 'gr',         "[LSP] Go to references",          tscope['lsp_references'] },
-        { 'gi',         "[LSP] Go to implementations",     tscope['lsp_implementations'] },
+        { 'gr',         "[LSP] Go to references",          function() require('rs.telescope')['lsp_references']() end },
+        { 'gi',         "[LSP] Go to implementations",     function() require('rs.telescope')['lsp_implementations']() end },
         { 'K',          "[LSP] Show more information",     vim.lsp.buf.hover },
         { '<c-k>',      "[LSP] Show signature help",       vim.lsp.buf.signature_help },
         { '<leader>rn', "[LSP] Rename",                    vim.lsp.buf.rename },
@@ -182,6 +181,7 @@ M.servers = {
     dockerls = true,
     gopls = true,
     ocamllsp = true,
+    nixd = true,
     tailwindcss = true,
     zls = true,
     clangd = {

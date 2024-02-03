@@ -37,13 +37,12 @@ return {
                 },
                 shortcut = {
                     { desc = ' Lazy', group = 'Function', action = 'Lazy', key = 'l', },
-                    { desc = ' Mason', group = 'Label', action = 'Lazy', key = 'm', },
-                    { desc = '󰊳 Update', group = 'DiagnosticHint', action = 'Lazy update', key = 'u' },
+                    { desc = ' Mason', group = 'Label', action = 'Mason', key = 'm', },
                     {
                         icon = ' ',
                         icon_hl = '@variable',
                         desc = 'Files',
-                        group = 'Number',
+                        group = 'DiagnosticHint',
                         action = 'Telescope find_files',
                         key = 'f',
                     },
