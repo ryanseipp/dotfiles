@@ -2,8 +2,8 @@
 
 # ls
 alias ls='eza'
-alias ll='eza -@Fhlg --git --git-repos --group-directories-first'
-alias la='eza -@Fhalg --git --git-repos --group-directories-first'
+alias ll='eza -F -hlg --git --git-repos --group-directories-first'
+alias la='eza -F -halg --git --git-repos --group-directories-first'
 
 # nvim
 alias n='nvim'
