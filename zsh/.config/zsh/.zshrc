@@ -12,6 +12,7 @@ setopt hist_ignore_space
 setopt hist_verify
 setopt share_history
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 source "$ZDOTDIR/zsh-functions"
 
 zsh_add_file "zsh-exports"
