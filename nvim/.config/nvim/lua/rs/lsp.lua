@@ -175,33 +175,35 @@ table.insert(lua_runtime_path, 'lua/?/init.lua')
 
 -- define lang server configs
 M.servers = {
-    ansiblels = true,
-    astro = true,
+    -- ansiblels = true,
+    -- astro = true,
     bashls = true,
     dockerls = true,
-    gopls = true,
-    ocamllsp = true,
-    nixd = true,
+    -- gopls = true,
+    -- ocamllsp = true,
+    -- nixd = true,
     tailwindcss = true,
-    zls = true,
-    clangd = {
-        cmd = {
-            'clangd',
-            '--offset-encoding=utf-16'
-        },
-        init_options = {
-            clangdFileStatus = true,
-        },
-    },
+    -- zls = true,
+    -- clangd = {
+    --     cmd = {
+    --         'clangd',
+    --         '--offset-encoding=utf-16'
+    --     },
+    --     init_options = {
+    --         clangdFileStatus = true,
+    --     },
+    -- },
     eslint = {
         settings = {
-            packageManager = 'pnpm',
+            packageManager = 'npm',
             format = false,
         },
     },
     omnisharp = {
         enable_editorconfig_support = false,
         enable_import_completion = true,
+        enable_roslyn_analyzers = true,
+        analyze_open_documents_only = true,
     },
     lua_ls = true,
     yamlls = {

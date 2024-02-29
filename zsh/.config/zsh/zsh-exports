@@ -46,4 +46,4 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 export GOPATH="$XDG_DATA_HOME"/go
 
-export PATH=$HOME/.local/bin:$HOME/.local/share/cargo/bin:$HOME/.ghcup/bin:$HOME/.docker/bin:$GOPATH/bin:$PATH
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/cargo/bin:$HOME/.ghcup/bin:$HOME/.docker/bin:$GOPATH/bin:$HOME/.dotnet/tools
