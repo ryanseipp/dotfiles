@@ -114,8 +114,8 @@ M.custom_attach = function(client, bufnr)
         { 'gd',         "[LSP] Go to definition",          vim.lsp.buf.definition },
         { 'gD',         "[LSP] Go to declaration",         vim.lsp.buf.declaration },
         { 'gT',         "[LSP] Go to type definition",     vim.lsp.buf.type_definition },
-        { 'gr',         "[LSP] Go to references",          function() require('rs.telescope')['lsp_references']() end },
-        { 'gi',         "[LSP] Go to implementations",     function() require('rs.telescope')['lsp_implementations']() end },
+        { 'gr',         "[LSP] Go to references",          function() require('telescope')['lsp_references']() end },
+        { 'gi',         "[LSP] Go to implementations",     function() require('telescope')['lsp_implementations']() end },
         { 'K',          "[LSP] Show more information",     vim.lsp.buf.hover },
         { '<c-k>',      "[LSP] Show signature help",       vim.lsp.buf.signature_help },
         { '<leader>rn', "[LSP] Rename",                    vim.lsp.buf.rename },
@@ -199,12 +199,12 @@ M.servers = {
             format = false,
         },
     },
-    omnisharp = {
-        enable_editorconfig_support = false,
-        enable_import_completion = true,
-        enable_roslyn_analyzers = true,
-        analyze_open_documents_only = true,
-    },
+    -- omnisharp = {
+    --     enable_editorconfig_support = false,
+    --     enable_import_completion = true,
+    --     enable_roslyn_analyzers = true,
+    --     analyze_open_documents_only = true,
+    -- },
     lua_ls = true,
     yamlls = {
         settings = {

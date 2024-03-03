@@ -9,7 +9,7 @@ return {
             {
                 'williamboman/mason-lspconfig.nvim',
                 dependencies = { 'williamboman/mason.nvim', opts = {} },
-                opts = { automatic_installation = true, ensure_installed = { 'rust_analyzer' } },
+                opts = { automatic_installation = true, ensure_installed = { 'rust_analyzer', 'omnisharp' } },
             },
         },
         config = function()
@@ -79,4 +79,23 @@ return {
             }
         end
     },
+    {
+        "iabdelkareem/csharp.nvim",
+        dependencies = {
+            "williamboman/mason.nvim", -- Required, automatically installs omnisharp
+            "mfussenegger/nvim-dap",
+            "Tastyep/structlog.nvim",  -- Optional, but highly recommended for debugging
+        },
+        config = function()
+            local lsp = require('rs.lsp')
+            require("mason").setup() -- Mason setup must run before csharp
+            require("csharp").setup({
+                lsp = {
+                    analyze_open_documents_only = true,
+                    capabilities = lsp.capabilities,
+                    on_attach = lsp.custom_attach
+                }
+            })
+        end
+    }
 }

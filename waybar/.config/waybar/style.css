@@ -1,0 +1,163 @@
+@define-color background #1F1F28;
+@define-color foreground #DCD7BA;
+@define-color selection_background #2D4F67;
+@define-color selection_foreground #C8C093;
+@define-color active_tab_background #1F1F28;
+@define-color active_tab_foreground #C8C093;
+@define-color inactive_tab_background #1F1F28;
+@define-color inactive_tab_foreground #727169;
+@define-color green #76946A;
+
+* {
+    border: none;
+    font-family: "Iosevka Nerd Font";
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 0;
+    border-radius: 4px;
+}
+
+window#waybar {
+    background: alpha(@background, 0.914);
+    color: @foreground;
+    border-width: 1px;
+    border-color: @selection_background;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+tooltip {
+    background: @background;
+    opacity: 0.8;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @active_tab_foreground;
+}
+
+tooltip label{
+    color: @foreground;
+}
+
+.modules-left {
+    margin-left: 4px;
+}
+
+.modules-right {
+    margin-right: 4px;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @inactive_tab_foreground;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: @foreground;
+}
+
+#workspaces button.focused {
+    color: @foreground;
+    border-radius: 4px;
+}
+
+#workspaces button.urgent {
+    color: @active_tab_foreground;
+    background: @green;
+    border-radius: 4px;
+}
+
+#workspaces button:hover {
+    background: @active_tab_foreground;
+    color: @background;
+    border-radius: 4px;
+}
+
+#custom-launch_wofi,
+#custom-lock_screen,
+#custom-light_dark,
+#custom-power_btm,
+#custom-power_profile,
+#custom-weather,
+#window,
+#cpu,
+#disk,
+#custom-updates,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#temperature,
+#workspaces,
+#backlight,
+#language {
+    padding: 0px 10px;
+    margin: 3px 0px;
+    border: 0px;
+}
+
+#tray, #custom-lock_screen, #temperature, #backlight, #custom-launch_wofi, #cpu {
+    border-radius: 4px 0px 0px 4px;
+}
+
+#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk {
+    border-radius: 0px 4px 4px 0px;
+    margin-right: 10px;
+}
+
+#temperature.critical {
+    color: #e92d4d;
+}
+
+
+#workspaces {
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-power_profile {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#window {
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#custom-launch_wofi {
+    margin-left: 10px;
+    border-right: 20px;
+}
+
+#pulseaudio {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#battery, #temperature {
+    border-left: 0px;
+}
+#disk {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#clock {
+    margin-right: 5px;
+}
+
+#pulseaudio, #backlight {
+    color: #89dceb;
+}
+
+#custom-power_btn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#tray > .passive, #tray > .active{
+    color: #cdd6f4;
+}
