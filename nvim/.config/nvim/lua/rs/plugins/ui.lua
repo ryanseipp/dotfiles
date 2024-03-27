@@ -1,12 +1,20 @@
 return {
     {
-        'rebelot/kanagawa.nvim',
-        lazy = false,
+        'catppuccin/nvim',
+        name = 'catppuccin',
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme('kanagawa')
-        end,
+            vim.cmd.colorscheme('catppuccin-mocha')
+        end
     },
+    -- {
+    --     'rebelot/kanagawa.nvim',
+    --     lazy = false,
+    --     priority = 1000,
+    --     config = function()
+    --         vim.cmd.colorscheme('kanagawa')
+    --     end,
+    -- },
     {
         'nvim-lualine/lualine.nvim',
         event = "VeryLazy",
@@ -75,7 +83,14 @@ return {
         event = "VeryLazy",
         dependencies = {
             'MunifTanjim/nui.nvim',
-            'rcarriga/nvim-notify',
+            {
+                'rcarriga/nvim-notify',
+                opts = {
+                    render = "wrapped-compact",
+                    timeout = 500,
+                    max_width = 50
+                }
+            },
         },
         opts = {
             lsp = {
@@ -109,5 +124,41 @@ return {
                 width = 60,
             }
         }
+    },
+    {
+        'lukas-reineke/indent-blankline.nvim',
+        main = 'ibl',
+        opts = { enabled = false },
+        init = function()
+            local augroup_indent = vim.api.nvim_create_augroup('custom-indent-guides', { clear = true })
+            vim.api.nvim_clear_autocmds { group = augroup_indent }
+            vim.api.nvim_create_autocmd(
+                { "BufEnter", "BufWinEnter" },
+                {
+                    pattern = { "*.yaml", "*.yml" },
+                    callback = function(ev)
+                        -- print(vim.inspect(ev.buf))
+                        require('ibl').setup_buffer(ev.buf, { enabled = true })
+                    end
+                }
+            )
+        end
+    },
+    {
+        'christoomey/vim-tmux-navigator',
+        cmd = {
+            "TmuxNavigateLeft",
+            "TmuxNavigateDown",
+            "TmuxNavigateUp",
+            "TmuxNavigateRight",
+            "TmuxNavigatePrevious",
+        },
+        keys = {
+            { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
+            { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
+            { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
+            { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
+            { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+        },
     }
 }

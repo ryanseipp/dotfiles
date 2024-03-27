@@ -19,9 +19,10 @@ zsh_add_file "zsh-exports"
 zsh_add_file "zsh-aliases"
 zsh_add_file ".zshenv"
 
-fpath=($XDG_CONFIG_HOME/zsh/completions/ $fpath)
+FPATH="$XDG_CONFIG_HOME/zsh/completions/:$(brew --prefix)/share/zsh/site-functions:$FPATH"
 
 autoload -U +X bashcompinit && bashcompinit
+source $(brew --prefix)/etc/bash_completion.d/az
 autoload -U +X compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
 stty stop undef
